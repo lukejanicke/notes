@@ -44,7 +44,7 @@ git config --global user.email
 | `git diff`                        | Show unstaged changes.                                 |
 | `git diff --staged`               | Show staged changes.                                   |
 | `git commit -m "<message>`        | Commit staged changes with a message.                  |
-| `git remote add origin <url>`     | Add a remote repository.                               |
+| `git remote add origin <url>`     | Add a remote repository. (Use SSH.)                    |
 | `git fetch`                       | Fetch latest changes from the remote.                  |
 | `git pull`                        | Fetch and merge changes from the remote.               |
 | `git push -u origin main`         | Push changes and set default remote branch.            |
