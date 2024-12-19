@@ -4,24 +4,37 @@
 
 ## Installation
 
-Install **`yt-dlp`** with [[Homebrew]].
+Install **yt-dlp** with [[Homebrew]].
 
 ```shell
 brew install yt-dlp
 ```
 
+Add an alias for [[Zsh]] in `.zshrc`.
+
+```shell
+alias youtube='yt-dlp'
+```
+
+Add an alias for [[Fish]] in `.config/fish/config.fish`.
+
+```shell
+function youtube
+	yt-dlp $argv
+end
+```
 ## Usage
 
 Download the video from a URL.
 
 ```shell
-yt-dlp "<URL>"
+youtube "<URL>"
 ```
 
 List available formats for a video.
 
 ```shell
-yt-dlp -F "<URL>"
+youtube -F "<URL>"
 ```
 
 
@@ -31,7 +44,7 @@ yt-dlp -F "<URL>"
 Download a video with the best available MP4 video and M4A audio.
 
 ```shell
-yt-dlp -f "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]" "<URL>"
+youtube -f "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]" "<URL>"
 ```
 
 
@@ -41,6 +54,6 @@ yt-dlp -f "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]" "<URL>"
 Download a video with the video at ID `137` and audio at ID `140`.
 
 ```shell
-yt-dlp -f 137+140 "<URL>"
+youtube -f 137+140 "<URL>"
 ```
 
