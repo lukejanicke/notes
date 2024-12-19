@@ -21,12 +21,12 @@
 - [x] [1.1.1.1](https://one.one.one.one) (maybe switch to [NextDNS](https://nextdns.io) in the future)
 - [x] 1Password for Mac
 - [ ] ~~Blender~~
-- [ ] ChatGPT
+- [x] [ChatGPT](https://openai.com)
 - [ ] ~~Discord~~
 - [x] [[Docker]]
 - [ ] GitHub Desktop
 - [ ] IINA
-- [ ] MacTeX ([[TeX]])
+- [ ] MacTeX ([[LaTeX]])
 - [x] Microsoft [[Visual Studio Code]]
 - [ ] ~~Mozilla Firefox~~
 - [x] [[Obsidian]]
