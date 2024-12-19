@@ -1,16 +1,8 @@
 # macOS
 
-- [ ] Add [[1Password]] to *AutoFill & Passwords*.
+- [ ] Add **1Password** to *AutoFill & Passwords*.
 - [ ] Change *Language & Region / Preferred Languages* to **English (Australia)** when Apple Intelligence becomes available with Australian English language settings. Update settings for *Apple Intelligence & Siri*.
 - [ ] There is a bug in Sequoia with Preview and Continuous Scroll and Zoom to Fit.
-
-## Reset Launchpad apps order
-
-```
-defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock
-```
-
-Alias `app` set in `~/.zshrc`. (See [[Zsh]].)
 
 ## Rosetta
 
