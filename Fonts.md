@@ -2,19 +2,12 @@
 
 See [[Iosevka]] for custom builds from source.
 
-- [Fira Sans](https://bboxtype.com/typefaces/FiraSans/)
-- [Fira Mono](https://bboxtype.com/typefaces/FiraMono/)
-- [Fira Code](https://github.com/tonsky/FiraCode)
-- [Iosevka](https://typeof.net/Iosevka/)
-	- Iosevka
-	- Iosevka Aile
-	- Iosevka Etoile
-	- Iosevka Slab
-- Iosevka Custom
-	- Iosevka Custom Sans
-	- Iosevka Custom Sans Quasi-Proportional
-	- Iosevka Custom Sans Terminal
-- [New Computer Modern](https://ctan.org/pkg/newcomputermodern)
+- [x] Iosevka Custom
+	- [x] Iosevka Custom Sans
+	- [x] Iosevka Custom Sans Quasi-Proportional
+	- [x] Iosevka Custom Sans Terminal
+- [x] [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+- [x] [New Computer Modern](https://ctan.org/pkg/newcomputermodern)
 
 ## Nerd Fonts
 
@@ -22,8 +15,6 @@ See [[Iosevka]] for custom builds from source.
 
 See [[Nerd Fonts]] for patching.
 
-- FiraCode Nerd Font
-- Iosevka Nerd Font
-	- IosevkaCustomSans Nerd Font
-	- IosevkaCustomSansQuasiProportional Nerd Font
-	- IosevkaCustomSansTerminal Nerd Font
+- [ ] Iosevka Nerd Font
+	- [ ] IosevkaCustomSans Nerd Font
+	- [ ] IosevkaCustomSansTerminal Nerd Font
