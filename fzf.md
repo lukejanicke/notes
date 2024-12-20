@@ -2,7 +2,21 @@
 
 - [fzf](https://junegunn.github.io/fzf/) / [Shell Integration](https://junegunn.github.io/fzf/shell-integration/)
 
-See [[Terminal Commands]] for **fzf** and other shell commands.
+## Usage
+
+| Shortcut                        | Description                                                                                                                                     |
+| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| <kbd>control</kbd> <kbd>R</kbd> | Paste the selected command from history onto the command-line<br><kbd>control</kbd> <kbd>T</kbd> Copy the command into clipboard using `pbcopy` |
+| <kbd>control</kbd> <kbd>T</kbd> | Paste the selected files and directories onto the command-line                                                                                  |
+| <kbd>option</kbd> <kbd>C</kbd>  | Print                                                                                                                                           |
+
+| Command        | Description                                                   |
+| -------------- | ------------------------------------------------------------- |
+| `code **<tab>` | Fuzzy completion for files under the current directory.       |
+| `cd **<tab>`   | Fuzzy completion for directories under the current directory. |
+
+> [!note] Fuzzy completion
+> [Fuzzy completion](https://junegunn.github.io/fzf/shell-integration/#fuzzy-completion-for-bash-and-zsh) is available for **Bash** and [[Zsh]], but not [[Fish]].
 
 ## Installation
 

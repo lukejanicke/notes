@@ -2,9 +2,19 @@
 
 - [Zsh](https://www.zsh.org) / [Prompt expansion](https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html)
 
-See [[Terminal Shortcuts]] for **Zsh** and other shell keyboard shortcuts.
+## Commands
 
-See [[Terminal Commands]] for **Zsh** and other shell commands.
+Make [[Zsh]] the system default shell.
+
+```shell
+sudo dscl . -create /Users/$(whoami) UserShell /bin/zsh
+```
+
+Confirm which shell is the system default.
+
+```shell
+dscl . -read /Users/$(whoami) UserShell
+```
 
 ## Configuration
 

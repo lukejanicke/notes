@@ -1,14 +1,39 @@
 # Terminal
 
+- [ ] Review shortcuts and move to [[Zsh]], [[Fish]] or [[WezTerm]] as needed.
+
 - [Terminal User Guide](https://support.apple.com/en-au/guide/terminal/welcome/mac) / [Keyboard shortcuts](https://support.apple.com/en-au/guide/terminal/trmlshtcts/mac)
 - [Catppuccin (GitHub)](https://github.com/catppuccin/Terminal.app)
 
-See [[Terminal Shortcuts]] for **Terminal** and other shell keyboard shortcuts.
-
-See [[Terminal Commands]] for **Terminal** and other shell commands.
-
 > [!note] [[Fish]] sets **Terminal** window and tab bar titles
-> [[Fish]] sets **Terminal** window and tab bar titles to an abbreviated current working directory, and prepends the shell name if the default shell is left. For example, `zsh ~/D/Python` for `zsh ~/Documents/Python`. Changing directory when not in [[Fish]] shell will not update window and tab bars. I would prefer that **Terminal** settings take precedence.
+> [[Fish]] sets **Terminal** window and tab bar titles to an abbreviated current working directory, and prepends the shell name if the default shell is left. For example, `zsh ~/D/Python` for `zsh ~/Documents/Python`. Changing directory when not in [[Fish]] shell will not update window and tab bars. I would prefer that **Terminal** settings take precedence. This is a [[Fish]] problem.
+
+## Shortcuts
+
+| Shortcut                                         | Action                                                          |
+| ------------------------------------------------ | --------------------------------------------------------------- |
+| <kbd>control</kbd> <kbd>A</kbd> / <kbd>E</kbd>   | Move cursor to beginning/end of line.                           |
+| <kbd>option</kbd> <kbd>B</kbd> / <kbd>F</kbd>    | Move cursor back/forward one word.                              |
+| <kbd>control</kbd> <kbd>X</kbd> <kbd>X</kbd>     | Jump between current and saved cursor position.                 |
+| <kbd>control</kbd> <kbd>U</kbd>                  | Delete the current line.                                        |
+| <kbd>control</kbd> <kbd>D</kbd>                  | Delete character under cursor (or exit shell if line is empty). |
+| <kbd>control</kbd> <kbd>K</kbd>                  | Delete from cursor to end of line.                              |
+| <kbd>control</kbd> <kbd>W</kbd>                  | Delete from cursor to beginning of word.                        |
+| <kbd>option</kbd> <kbd>D</kbd>                   | Delete from cursor to end of word.                              |
+| <kbd>control</kbd> <kbd>T</kbd>                  | Swap current and preceding characters (transpose).              |
+| <kbd>control</kbd> <kbd>/</kbd>                  | Undo last editing action.                                       |
+| <kbd>control</kbd> <kbd>L</kbd>                  | Clear screen (but not scrollback).                              |
+| <kbd>control</kbd> <kbd>shift</kbd> <kbd>K</kbd> | Clear scrollback (but not screen).                              |
+| *double click on word*                           | Select a whole word.                                            |
+| *triple click on line*                           | Select a whole line.                                            |
+
+| Shortcut                                           | Action                                |
+| -------------------------------------------------- | ------------------------------------- |
+| <kbd>option</kbd> + *mouse click*                  | Reposition the cursor.                |
+| <kbd>command</kbd> <kbd>L</kbd>                    | Clear to previous mark/command.       |
+| <kbd>command</kbd> <kbd>K</kbd>                    | Clear to start (of Terminal session). |
+| <kbd>command</kbd> <kbd>option</kbd> <kbd>K</kbd>  | Clear the scrollback.                 |
+| <kbd>command</kbd> <kbd>control</kbd> <kbd>K</kbd> | Clear the screen.                     |
 
 ## Commands
 

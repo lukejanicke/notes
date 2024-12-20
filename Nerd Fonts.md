@@ -13,27 +13,27 @@ Create a working directory with a `fonts` subdirectory.
 mkdir -p ~/nerdfonts/fonts
 ```
 
-Copy fonts to be patched into `./fonts`.
+Copy fonts to be patched into `~/nerdfonts/fonts`.
 
 Run [[Docker]] from the working directory.
 
 ```shell
-docker run \
-    -it \
-    --name font-patcher \
-    -v "$(pwd):/work" \
-    -w /work \
-    ubuntu:latest \
-    /bin/bash
+docker run -it --name font-patcher -v "$(pwd):/work" -w /work ubuntu:latest /bin/bash
 ```
+
+Update `apt-get`.
 
 ```shell
 apt-get update
 ```
 
+Install necessary packages.
+
 ```shell
 apt-get install -y fontforge python3 python3-pip wget unzip git python3-fontforge
 ```
+
+Get the font patcher from GitHub.
 
 ```shell
 wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FontPatcher.zip
@@ -43,9 +43,13 @@ wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FontPatche
 unzip FontPatcher.zip
 ```
 
+Make the font patcher executable.
+
 ```shell
 chmod +x font-patcher
 ```
+
+Update the font patcher to use Python 3.
 
 ```shell
 sed -i '1s/python/python3/' font-patcher
@@ -58,7 +62,7 @@ for file in ./fonts/*.ttf; do ./font-patcher -c "$file"; done
 ```
 
 > [!Warning] Variable Fonts
-> Do not patch variable fonts. It doesn’t work.
+> Don’t patch variable fonts. It doesn’t work.
 
 Generate *Mono* and *Propo* variants.
 

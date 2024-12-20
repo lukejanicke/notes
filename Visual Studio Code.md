@@ -12,18 +12,18 @@ From the command palette, run *Shell Command: Install 'code' command in PATH*.
 
 See [[Visual Studio Code Keyboard Shortcuts for macOS.pdf]] for more.
 
-| Shortcut                                                          | Description                                    |
-| ----------------------------------------------------------------- | ---------------------------------------------- |
+| Shortcut                                                            | Description                                    |
+| ------------------------------------------------------------------- | ---------------------------------------------- |
 | <kbd>command</kbd> <kbd>command</kbd> <kbd>P</kbd> or <kbd>F1</kbd> | Command palette…                               |
-| <kbd>command</kbd> <kbd>K</kbd> <kbd>S</kbd>                      | Keyboard shortcuts                             |
-| <kbd>command</kbd> <kbd>P</kbd>                                   | Quick open, go to file…                        |
-| <kbd>shift</kbd> <kbd>command</kbd> <kbd>V</kbd>                  | Open markdown preview                          |
-| <kbd>command</kbd> <kbd>K</kbd> <kbd>V</kbd>                      | Open markdown preview to the side              |
-| <kbd>command</kbd> <kbd>K</kbd> <kbd>Z</kbd>                      | Zen mode                                       |
-| <kbd>command</kbd> <kbd>K</kbd> <kbd>T</kbd>                      | Color theme                                    |
-| <kbd>command</kbd> <kbd>B</kbd>                                   | Show side bar                                  |
-| <kbd>command</kbd> <kbd>J</kbd>                                   | Show panel                                     |
-| <kbd>shift</kbd> <kbd>command</kbd> <kbd>L</kbd>                  | Select all occurrences of selection/find match |
+| <kbd>command</kbd> <kbd>K</kbd> <kbd>S</kbd>                        | Keyboard shortcuts                             |
+| <kbd>command</kbd> <kbd>P</kbd>                                     | Quick open, go to file…                        |
+| <kbd>shift</kbd> <kbd>command</kbd> <kbd>V</kbd>                    | Open markdown preview                          |
+| <kbd>command</kbd> <kbd>K</kbd> <kbd>V</kbd>                        | Open markdown preview to the side              |
+| <kbd>command</kbd> <kbd>K</kbd> <kbd>Z</kbd>                        | Zen mode                                       |
+| <kbd>command</kbd> <kbd>K</kbd> <kbd>T</kbd>                        | Color theme                                    |
+| <kbd>command</kbd> <kbd>B</kbd>                                     | Show side bar                                  |
+| <kbd>command</kbd> <kbd>J</kbd>                                     | Show panel                                     |
+| <kbd>shift</kbd> <kbd>command</kbd> <kbd>L</kbd>                    | Select all occurrences of selection/find match |
 
 > [!warning] Command Palette
 > **TickTick** sets <kbd>command</kbd> <kbd>shift</kbd> <kbd>P</kbd> to a global action hotkey. Just delete all global action hotkeys for **TickTick**.

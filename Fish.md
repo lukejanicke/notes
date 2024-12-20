@@ -5,9 +5,26 @@
 	- [Writing your own prompt](https://fishshell.com/docs/current/prompt.html)
 - [Catppuccin (GitHub)](https://github.com/catppuccin/fish)
 
-See [[Terminal Shortcuts]] for **Fish** and other shell keyboard shortcuts.
+## Usage
 
-See [[Terminal Commands]] for **Fish** and other shell commands.
+See [[Fish]] [command line editor](https://fishshell.com/docs/current/interactive.html#command-line-editor).
+
+| Command        | Description                                            |
+| -------------- | ------------------------------------------------------ |
+| `help`         | Open online help documentation.                        |
+| `help command` | Open online help documentation for a specific command. |
+
+Make [[Fish]] the system default shell.
+
+```shell
+sudo dscl . -create /Users/$(whoami) UserShell /opt/homebrew/bin/fish
+```
+
+Confirm which shell is the system default.
+
+```shell
+dscl . -read /Users/$(whoami) UserShell
+```
 
 ## Installation
 
