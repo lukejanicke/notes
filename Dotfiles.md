@@ -1,14 +1,16 @@
 # Dotfiles
 
+- [ ] Develop an alternative dotfile management system called Dotfiles that installs like Homebrew and provides the `dot` command, which handles all dotfile management and repository actions.
+
 - [Dotfiles (GitHub)](https://github.com/lukejanicke/dotfiles)
 
 ## Quick commands
 
 ```shell
-dotfiles add <file>                  # Track/stage <file>
-dotfiles add -u                      # Stage all tracked files
-dotfiles commit -m "added <dotfile>" # Commit all staged changes with message
-dotfiles push origin main            # Upload to GitHub
+dotfiles add <file>               # Track/stage a <file>
+dotfiles add -u                   # Stage all tracked files
+dotfiles commit -m "added <file>" # Commit all staged changes with message
+dotfiles push origin main         # Upload to GitHub
 ```
 
 Show all files and directories being tracked.

@@ -5,6 +5,10 @@
 	- [Writing your own prompt](https://fishshell.com/docs/current/prompt.html)
 - [Catppuccin (GitHub)](https://github.com/catppuccin/fish)
 
+
+> [!note] Root User and Fish Theme
+> Command highlighting from the Fish theme does not apply to the root user by default. This might be due to Fish using a separate configuration for the root account. It may be possible to resolve this by copying or symlinking the Fish configuration to `/var/root/.config/fish/config.fish`.
+
 ## Usage
 
 See [[Fish]] [command line editor](https://fishshell.com/docs/current/interactive.html#command-line-editor).
