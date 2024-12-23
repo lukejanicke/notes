@@ -56,25 +56,26 @@ Grab the font files from `~/iosevka/dist/`.
 
 ## Fonts
 
-| Font                  | Style                         | Nerd Font | Use                |
-| --------------------- | ----------------------------- | --------- | ------------------ |
-| Iosevka               | Proportional                  | Propo     | Visual Studio Code |
-| Iosevka Slab          | Proportional, Serif           |           |                    |
-| Iosevka Terminal      | Monospace                     | Mono      |                    |
-| Iosevka Terminal Slab | Monospace, Serif              |           |                    |
-| Iosevka Fixed         | Monospace, No Ligation        | Mono      | Terminal, WezTerm  |
-| Iosevka Fixed Slab    | Monospace, Serif, No Ligation |           |                    |
-| Iosevka Aile          | Quasi-Proportional            |           |                    |
-| Iosevka Etoile        | Quasi-Proportional, Serif     |           |                    |
+| Font                  | Style                         | Nerd Font | Use                              |
+| --------------------- | ----------------------------- | --------- | -------------------------------- |
+| Iosevka               | Proportional                  | Propo     | Visual Studio Code (alternative) |
+| Iosevka Slab          | Proportional, Serif           |           |                                  |
+| Iosevka Terminal      | Monospace                     | Mono      |                                  |
+| Iosevka Terminal Slab | Monospace, Serif              |           |                                  |
+| Iosevka Fixed         | Monospace, No Ligation        | Mono      | Terminal, WezTerm                |
+| Iosevka Fixed Slab    | Monospace, Serif, No Ligation |           |                                  |
+| Iosevka Aile          | Quasi-Proportional            |           | Visual Studio Code (main)        |
+| Iosevka Etoile        | Quasi-Proportional, Serif     |           |                                  |
 
 ## Builds
 
-- Weights: 400 and 700
+- Weights: 400 (normal) and 700 (bold)
 - Widths: 600 (as default)
 - Slopes: upright (regular) and italic
 - Do not export cv## / ss## OpenType features
 - Do not export glyph names for Kitty
 - Discretionary ligatures
+- Build `ttf-unhinted` only
 
 `private-build-plans.toml` is not (yet) included in [dotfiles](https://github.com/lukejanicke/dotfiles).
 
