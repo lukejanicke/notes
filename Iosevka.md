@@ -49,23 +49,32 @@ Refer to [Building Iosevka from Source](https://github.com/be5invis/Iosevka/blob
 Run `npm run build -- contents::Iosevka` to build fonts.
 
 ```shell
-npm run build -- ttf::Iosevka
+npm run build -- ttf-unhinted::Iosevka ttf-unhinted::IosevkaSlab ttf-unhinted::IosevkaTerminal ttf-unhinted::IosevkaTerminalSlab ttf-unhinted::IosevkaFixed ttf-unhinted::IosevkaFixedSlab ttf-unhinted::IosevkaAile ttf-unhinted::IosevkaEtoile
 ```
 
 Grab the font files from `~/iosevka/dist/`.
 
-## Plans
+## Fonts
 
-| Font                  | Style                         | Nerd Fonts | Use                |
-| --------------------- | ----------------------------- | ---------- | ------------------ |
-| Iosevka               | Proportional                  | Propo      | Visual Studio Code |
-| Iosevka Slab          | Proportional, Serif           |            |                    |
-| Iosevka Terminal      | Monospace                     | Mono       |                    |
-| Iosevka Terminal Slab | Monospace, Serif              |            |                    |
-| Iosevka Fixed         | Monospace, No Ligation        | Mono       | Terminal, WezTerm  |
-| Iosevka Fixed Slab    | Monospace, Serif, No Ligation |            |                    |
-| Iosevka Aile          | Quasi-Proportional            |            |                    |
-| Iosevka Etoile        | Quasi-Proportional, Serif     |            |                    |
+| Font                  | Style                         | Nerd Font | Use                |
+| --------------------- | ----------------------------- | --------- | ------------------ |
+| Iosevka               | Proportional                  | Propo     | Visual Studio Code |
+| Iosevka Slab          | Proportional, Serif           |           |                    |
+| Iosevka Terminal      | Monospace                     | Mono      |                    |
+| Iosevka Terminal Slab | Monospace, Serif              |           |                    |
+| Iosevka Fixed         | Monospace, No Ligation        | Mono      | Terminal, WezTerm  |
+| Iosevka Fixed Slab    | Monospace, Serif, No Ligation |           |                    |
+| Iosevka Aile          | Quasi-Proportional            |           |                    |
+| Iosevka Etoile        | Quasi-Proportional, Serif     |           |                    |
+
+## Builds
+
+- Weights: 400 and 700
+- Widths: 600 (as default)
+- Slopes: upright (regular) and italic
+- Do not export cv## / ss## OpenType features
+- Do not export glyph names for Kitty
+- Discretionary ligatures
 
 `private-build-plans.toml` is not (yet) included in [dotfiles](https://github.com/lukejanicke/dotfiles).
 
@@ -76,48 +85,40 @@ Grab the font files from `~/iosevka/dist/`.
 
 [buildPlans.Iosevka]
 family = "Iosevka"
-serifs = "sans"
 spacing = "normal"
-noCvSs = false
+serifs = "sans"
+noCvSs = true
 exportGlyphNames = false
 
-[buildPlans.Iosevka.ligations]
-inherits = "dlig"
+    [buildPlans.Iosevka.ligations]
+    inherits = "dlig"
 
-[buildPlans.Iosevka.widths.UltraCondensed]
-shape = 416
-menu = 1
-css = "ultra-condensed"
+[buildPlans.Iosevka.weights.Regular]
+shape = 400
+menu = 400
+css = 400
 
-[buildPlans.Iosevka.widths.ExtraCondensed]
-shape = 456
-menu = 2
-css = "extra-condensed"
-
-[buildPlans.Iosevka.widths.Condensed]
-shape = 500
-menu = 3
-css = "condensed"
-
-[buildPlans.Iosevka.widths.SemiCondensed]
-shape = 548
-menu = 4
-css = "semi-condensed"
+[buildPlans.Iosevka.weights.Bold]
+shape = 700
+menu = 700
+css = 700
 
 [buildPlans.Iosevka.widths.Normal]
 shape = 600
 menu = 5
 css = "normal"
 
-[buildPlans.Iosevka.widths.SemiExtended]
-shape = 658
-menu = 6
-css = "semi-expanded"
+[buildPlans.Iosevka.slopes.Upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
 
-[buildPlans.Iosevka.widths.Extended]
-shape = 720
-menu = 7
-css = "expanded"
+[buildPlans.Iosevka.slopes.Italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
 
 ##################
 ## Iosevka Slab ## 
@@ -125,18 +126,40 @@ css = "expanded"
 
 [buildPlans.IosevkaSlab]
 family = "Iosevka Slab"
-serifs = "slab"
 spacing = "normal"
-noCvSs = false
+serifs = "slab"
+noCvSs = true
 exportGlyphNames = false
 
-[buildPlans.IosevkaSlab.ligations]
-inherits = "dlig"
+    [buildPlans.IosevkaSlab.ligations]
+    inherits = "dlig"
+
+[buildPlans.IosevkaSlab.weights.Regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.IosevkaSlab.weights.Bold]
+shape = 700
+menu = 700
+css = 700
 
 [buildPlans.IosevkaSlab.widths.Normal]
 shape = 600
 menu = 5
 css = "normal"
+
+[buildPlans.IosevkaSlab.slopes.Upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.IosevkaSlab.slopes.Italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
 
 ######################
 ## Iosevka Terminal ##
@@ -144,18 +167,40 @@ css = "normal"
 
 [buildPlans.IosevkaTerminal]
 family = "Iosevka Terminal"
-serifs = "sans"
 spacing = "term"
+serifs = "sans"
 noCvSs = true
 exportGlyphNames = false
 
-[buildPlans.IosevkaTerminal.ligations]
-inherits = "dlig"
+    [buildPlans.IosevkaTerminal.ligations]
+    inherits = "dlig"
+
+[buildPlans.IosevkaTerminal.weights.Regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.IosevkaTerminal.weights.Bold]
+shape = 700
+menu = 700
+css = 700
 
 [buildPlans.IosevkaTerminal.widths.Normal]
 shape = 600
 menu = 5
 css = "normal"
+
+[buildPlans.IosevkaTerminal.slopes.Upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.IosevkaTerminal.slopes.Italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
 
 ###########################
 ## Iosevka Terminal Slab ##
@@ -163,18 +208,40 @@ css = "normal"
 
 [buildPlans.IosevkaTerminalSlab]
 family = "Iosevka Terminal Slab"
-serifs = "sans"
 spacing = "term"
+serifs = "slab"
 noCvSs = true
 exportGlyphNames = false
 
-[buildPlans.IosevkaTerminalSlab.ligations]
-inherits = "dlig"
+    [buildPlans.IosevkaTerminalSlab.ligations]
+    inherits = "dlig"
+
+[buildPlans.IosevkaTerminalSlab.weights.Regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.IosevkaTerminalSlab.weights.Bold]
+shape = 700
+menu = 700
+css = 700
 
 [buildPlans.IosevkaTerminalSlab.widths.Normal]
 shape = 600
 menu = 5
 css = "normal"
+
+[buildPlans.IosevkaTerminalSlab.slopes.Upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.IosevkaTerminalSlab.slopes.Italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
 
 ###################
 ## Iosevka Fixed ##
@@ -182,18 +249,40 @@ css = "normal"
 
 [buildPlans.IosevkaFixed]
 family = "Iosevka Fixed"
-serifs = "sans"
 spacing = "fixed"
+serifs = "sans"
 noCvSs = true
 exportGlyphNames = false
 
-[buildPlans.IosevkaFixed.ligations]
-inherits = "dlig"
+    [buildPlans.IosevkaFixed.ligations]
+    inherits = "dlig"
+
+[buildPlans.IosevkaFixed.weights.Regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.IosevkaFixed.weights.Bold]
+shape = 700
+menu = 700
+css = 700
 
 [buildPlans.IosevkaFixed.widths.Normal]
 shape = 600
 menu = 5
 css = "normal"
+
+[buildPlans.IosevkaFixed.slopes.Upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.IosevkaFixed.slopes.Italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
 
 ########################
 ## Iosevka Fixed Slab ##
@@ -201,54 +290,120 @@ css = "normal"
 
 [buildPlans.IosevkaFixedSlab]
 family = "Iosevka Fixed Slab"
-serifs = "sans"
 spacing = "fixed"
+serifs = "slab"
 noCvSs = true
 exportGlyphNames = false
 
-[buildPlans.IosevkaFixedSlab.ligations]
-inherits = "dlig"
+    [buildPlans.IosevkaFixedSlab.ligations]
+    inherits = "dlig"
+
+[buildPlans.IosevkaFixedSlab.weights.Regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.IosevkaFixedSlab.weights.Bold]
+shape = 700
+menu = 700
+css = 700
 
 [buildPlans.IosevkaFixedSlab.widths.Normal]
 shape = 600
 menu = 5
 css = "normal"
 
+[buildPlans.IosevkaFixedSlab.slopes.Upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.IosevkaFixedSlab.slopes.Italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
 ##################
 ## Iosevka Aile ##
 ##################
 
-[buildPlans.Aile]
+[buildPlans.IosevkaAile]
 family = "Iosevka Aile"
-serifs = "sans"
 spacing = "quasi-proportional"
+serifs = "sans"
 noCvSs = true
 exportGlyphNames = false
 
-[buildPlans.Aile.ligations]
-inherits = "dlig"
+    [buildPlans.IosevkaAile.ligations]
+    inherits = "dlig"
 
-[buildPlans.Aile.widths.Normal]
+[buildPlans.IosevkaAile.weights.Regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.IosevkaAile.weights.Bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.IosevkaAile.widths.Normal]
 shape = 600
 menu = 5
 css = "normal"
+
+[buildPlans.IosevkaAile.slopes.Upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.IosevkaAile.slopes.Italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
 
 ####################
 ## Iosevka Etoile ##
 ####################
 
-[buildPlans.Etoile]
+[buildPlans.IosevkaEtoile]
 family = "Iosevka Etoile"
-serifs = "serif"
 spacing = "quasi-proportional"
+serifs = "slab"
 noCvSs = true
 exportGlyphNames = false
 
-[buildPlans.Etoile.ligations]
-inherits = "dlig"
+    [buildPlans.IosevkaEtoile.ligations]
+    inherits = "dlig"
 
-[buildPlans.Etoile.widths.Normal]
+[buildPlans.IosevkaEtoile.weights.Regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.IosevkaEtoile.weights.Bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.IosevkaEtoile.widths.Normal]
 shape = 600
 menu = 5
 css = "normal"
+
+[buildPlans.IosevkaEtoile.slopes.Upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.IosevkaEtoile.slopes.Italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
 ```

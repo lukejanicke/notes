@@ -64,7 +64,7 @@ for file in ./fonts/*.ttf; do ./font-patcher -c "$file"; done
 > [!Warning] Variable Fonts
 > Don’t patch variable fonts. It doesn’t work.
 
-Generate *Mono* and *Propo* variants.
+Patch *Mono* and *Propo* variants.
 
 ```shell
 for file in ./fonts/*.ttf; do ./font-patcher -s -c "$file"; done

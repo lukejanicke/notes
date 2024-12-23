@@ -12,7 +12,7 @@
 
 <kbd>Command</kbd> <kbd>Shift</kbd> <kbd>.</kbd>
 
-```
+```shell
 defaults write com.apple.finder AppleShowAllFiles -bool TRUE && killall Finder
 defaults write com.apple.finder AppleShowAllFiles -bool FALSE && killall Finder
 ```
