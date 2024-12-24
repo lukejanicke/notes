@@ -35,3 +35,10 @@
 - [ ] [[WezTerm]]
 - [x] [Windsurf](https://codeium.com/windsurf)
 - [ ] ~~Zoom~~
+
+### JetBrains
+
+- [x] WebStorm
+- [x] PyCharm
+- [x] CLion
+- [x] Fleet
