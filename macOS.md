@@ -48,6 +48,7 @@ softwareupdate --install-rosetta
 	- Automatically rearrange Spaces based on most recent use **OFF**
 	- Hot Corners… / Remove all hot corners
 - Displays
+	- Color profile **sRGB IEC61966-2.1**
 	- Night Shift…
 		- Schedule **Sunset to Sunrise**
 		- Color temperature **Less Warm**

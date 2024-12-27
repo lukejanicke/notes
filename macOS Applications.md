@@ -3,7 +3,6 @@
 ## App Store
 
 - [x] 1Password for Safari
-- [ ] ~~Affinity Designer 2~~
 - [x] Microsoft Excel
 - [x] Microsoft Word
 - [x] TickTick
@@ -12,33 +11,27 @@
 
 - [x] [[Command Line Tools]]
 - [x] [[Homebrew]]
-- [ ] ~~Swift Playgrounds~~
-- [ ] ~~Test Flight~~
+- [ ] Swift Playgrounds
+- [ ] Test Flight
 - [ ] Xcode
 
 ## Download
 
 - [x] [1.1.1.1](https://one.one.one.one) (maybe switch to [NextDNS](https://nextdns.io) in the future)
 - [x] 1Password for Mac
-- [ ] ~~Blender~~
+- [ ] Blender
 - [x] [ChatGPT](https://openai.com)
-- [ ] ~~Discord~~
+- [ ] Discord
 - [x] [[Docker]]
 - [ ] GitHub Desktop
 - [ ] IINA
-- [ ] MacTeX ([[LaTeX]])
+- [x] JetBrains CLion
+- [x] JetBrains PyCharm
+- [x] MacTeX ([[LaTeX]])
 - [x] Microsoft [[Visual Studio Code]]
-- [ ] ~~Mozilla Firefox~~
+- [ ] Mozilla Firefox
 - [x] [[Obsidian]]
 - [ ] Skim
 - [ ] Tencent Meeting
-- [ ] [[WezTerm]]
-- [x] [Windsurf](https://codeium.com/windsurf)
-- [ ] ~~Zoom~~
-
-### JetBrains
-
-- [x] WebStorm
-- [x] PyCharm
-- [x] CLion
-- [x] Fleet
+- [x] [[WezTerm]]
+- [ ] Zoom

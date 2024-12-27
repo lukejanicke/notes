@@ -28,20 +28,24 @@ Install [**Neovim**](https://neovim.io) with [[Homebrew]].
 brew install neovim
 ```
 
-Install [**`kickstart.nvim`**](https://github.com/nvim-lua/kickstart.nvim) with [[Git]].
-
-```shell
-git clone https://github.com/nvim-lua/kickstart.nvim.git ~/.config/nvim
-```
-
 Start **Neovim**.
 
 ```shell
 nvim
 ```
 
-## Advent of Neovim
+## [Advent of Neovim](https://www.youtube.com/playlist?list=PLep05UYkc6wTyBe7kPjQFWVXTlhKeQejM)
+
+Create `./config/neovim/init.lua`.
 
 ```shell
-...
+mkdir -p ./config/neovim
+touch ./config/neovim/init.lua
 ```
+
+Source `init.lua` in **Neovim**.
+
+```vim
+:source %
+```
+
