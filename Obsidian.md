@@ -13,6 +13,8 @@
 
 - General
 	- Notify if startup takes longer than expected **ON**
+- Editor
+	- Show indentation guides **OFF**
 - Appearance
 	- Install **Catppuccin** theme
 	- Interface font *leave default*

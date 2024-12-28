@@ -28,6 +28,27 @@ See [[Visual Studio Code Keyboard Shortcuts for macOS.pdf]] for more.
 > [!warning] Command Palette
 > **TickTick** sets <kbd>command</kbd> <kbd>shift</kbd> <kbd>P</kbd> to a global action hotkey. Just delete all global action hotkeys for **TickTick**.
 
+### GitHub Copilot
+
+| Command                         | Action                      |
+|---------------------------------|-----------------------------|
+| `Tab` or `Enter`                | Accept suggestion           |
+| `⌘ + I`                         | Trigger suggestion manually |
+| `⌥ + ]`                         | Next suggestion             |
+| `⌥ + [`                         | Previous suggestion         |
+| `Esc`                           | Dismiss suggestion          |
+
+### Microsoft IntelliSense
+
+| Command                         | Action                            |
+|---------------------------------|-----------------------------------|
+| `⌃ + Space`                     | Trigger suggestions              |
+| `Tab` or `Enter`                | Accept suggestion                |
+| `⌘ + ⇧ + Space`                 | Trigger parameter info           |
+| `⌃ + K, ⌃ + I`                  | Quick info (hover)               |
+| `⌃ + Space`                     | Show member list                 |
+| `F12` or `⌘ + Click`            | Go to definition                 |
+
 ## Settings
 
 Log in with GitHub to sync settings.

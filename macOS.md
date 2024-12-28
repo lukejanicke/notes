@@ -30,6 +30,9 @@ softwareupdate --install-rosetta
 		- AutoFill Passwords and Passkeys **OFF**
 		- AutoFill from Passwords (new Apple app) **OFF**
 	- Language & Region / Preferred Languages: **English (Australia) — Primary**
+- Accessibility / Pointer Control / Trackpad Options…
+	- Use trackpad for dragging **ON**
+	- Dragging style **Without drag lock**
 - Appearance
 	- Show scroll bars ... **When scrolling**
 - Apple Intelligence & Siri

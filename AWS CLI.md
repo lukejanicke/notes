@@ -4,7 +4,7 @@
 
 ## Install
 
-Install with [Homebrew](Homebrew.md).
+Install **AWS CLI** with [Homebrew](Homebrew.md).
 
 ```zsh
 brew install awscli

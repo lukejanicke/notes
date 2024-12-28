@@ -3,6 +3,7 @@
 ## App Store
 
 - [x] 1Password for Safari
+- [x] Affinity Designer 2
 - [x] Microsoft Excel
 - [x] Microsoft Word
 - [x] TickTick
@@ -24,6 +25,7 @@
 - [ ] Discord
 - [x] [[Docker]]
 - [ ] GitHub Desktop
+- [x] [Ghostty](https://ghostty.org)
 - [ ] IINA
 - [x] JetBrains CLion
 - [x] JetBrains PyCharm

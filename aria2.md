@@ -4,7 +4,7 @@
 
 ## Installation
 
-Install with [Homebrew](Homebrew.md).
+Install **aria2** with [Homebrew](Homebrew.md).
 
 ```zsh
 brew install aria2
