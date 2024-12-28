@@ -1,6 +1,6 @@
 # Homebrew
 
-- [Homebrew](https://brew.sh)
+- [Homebrew](https://brew.sh) / [GitHub](https://github.com/Homebrew/brew)
 
 ## Packages
 
