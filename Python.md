@@ -5,27 +5,46 @@
 
 ## Packages
 
-- [x] IPython
-- [x] nbconvert
+- [ ] IPython
+- [ ] nbconvert
 - [ ] Matplotlib
 - [ ] NumPy
 - [ ] Plotly
 - [ ] SciPy
 
-## Installation
+## Install
 
-Install **`pyenv`** with [[Homebrew]].
+Install **pyenv** with [[Homebrew]].
 
 ```zsh
 brew install pyenv
 ```
 
-Copy the following to `~/.zshrc`.
+Configure **pyenv** in [[Zsh]] and [[Fish]].
 
 ```zsh
+# ~/.zshrc
+
+# Python
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+```
+
+```shell
+# ~/.config/fish/config.fish
+
+if status is-interactive
+
+    # Python
+    set -x PYENV_ROOT $HOME/.pyenv
+    test -d $PYENV_ROOT/bin; and set -x PATH $PYENV_ROOT/bin $PATH
+    pyenv init | source
+
+    # Ensure pyenv shims are in the PATH for pip and pip3
+    set -x PATH $PYENV_ROOT/shims $PATH
+
+end
 ```
 
 Check for the latest version number.
@@ -50,7 +69,7 @@ pyenv install 3.13.1
 pyenv global 3.13.1
 ```
 
-Update `pip`.
+Update `pip` (when an update is available).
 
 ```zsh
 pip install --upgrade pip

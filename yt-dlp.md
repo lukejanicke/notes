@@ -1,30 +1,10 @@
 # yt-dlp
 
+- [ ] Move commands to [[Terminal Commands and Shortcuts]].
+
 - [yt-dlp (GitHub)](https://github.com/yt-dlp/yt-dlp)
 
-## Installation
-
-Install **yt-dlp** with [[Homebrew]].
-
-```shell
-brew install yt-dlp
-```
-
-Add an alias for [[Zsh]] in `.zshrc`.
-
-```shell
-alias youtube='yt-dlp'
-```
-
-Add an alias for [[Fish]] in `.config/fish/config.fish`.
-
-```shell
-function youtube
-	yt-dlp $argv
-end
-```
-
-## Usage
+## Commands
 
 Download the video from a URL.
 
@@ -54,4 +34,34 @@ Download a video with the video at ID `137` and audio at ID `140`.
 
 ```shell
 youtube -f 137+140 "<URL>"
+```
+
+## Install
+
+Install **yt-dlp** with [[Homebrew]].
+
+```shell
+brew install yt-dlp
+```
+
+Add aliases for [[Zsh]] and [[Fish]].
+
+```shell
+# ~/.zshrc
+
+# yt-dlp
+alias youtube='yt-dlp'
+```
+
+```shell
+# ~/.config/fish/config.fish
+
+if status is-interactive
+
+    # yt-dlp
+    function youtube
+        yt-dlp $argv
+    end
+
+end
 ```

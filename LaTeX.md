@@ -3,16 +3,16 @@
 - [MacTeX](https://tug.org/mactex/)
 - [LaTeX Workshop](https://github.com/James-Yu/LaTeX-Workshop) / [Snippets and shortcuts](https://github.com/James-Yu/LaTeX-Workshop/wiki/Snippets)
 
-See [[LaTeX Cheat Sheet.pdf]] for common shortcuts.
+See [[LaTeX Cheat Sheet.pdf|LaTeX Cheat Sheet]] for common shortcuts.
 ## Local installation
 
 Install **TeX Live** locally using one of the two official Mac packages—**MacTeX** or **BasicTeX**.
 
-Have a ☕️.
-
-Add the applicable `PATH` to `~/.zshenv`.
+Add the applicable `PATH` to [[Zsh]] and [[Fish]].
 
 ```zsh
+# ~/.zshenv
+
 # MacTeX
 export PATH="/usr/local/texlive/2024/bin/universal-darwin:$PATH"
 
@@ -20,15 +20,24 @@ export PATH="/usr/local/texlive/2024/bin/universal-darwin:$PATH"
 export PATH="/usr/local/texlive/2024basic/bin/universal-darwin:$PATH"
 ```
 
-> [!tip] MacTeX and BasicTeX
-> Both MacTeX and BasicTeX packages can be installed side by side, but only one PATH can be active at a time.
+```shell
+# ~/.config/fish/config.fish
 
-Source `~/.zshenv` and verify the installation.
+# MacTeX
+set -gx PATH /usr/local/texlive/2024/bin/universal-darwin $PATH
+
+# BasicTeX
+set -gx PATH /usr/local/texlive/2024basic/bin/universal-darwin $PATH
+```
+
+Source and verify the installation.
 
 ```zsh
-source ~/.zshenv
 which pdflatex
 ```
+
+> [!tip] MacTeX and BasicTeX
+> Both MacTeX and BasicTeX packages can be installed side by side, but only one PATH can be active at a time.
 
 ## Usage
 
@@ -44,7 +53,7 @@ Watch and compile continuously (on save).
 latexmk -pvc -pdf project.tex
 ```
 
-Manually clean Up auxillary files.
+Manually clean Up auxiliary files.
 
 ```zsh
 rm *.aux *.bbl *.blg *.fdb_latexmk *.fls *.log *.out *.toc
@@ -57,7 +66,7 @@ Install the **LaTeX Workshop** extension for Visual Studio Code.
 The default settings are sufficient to get started.
 ## Docker
 
-Pull the unofficial official TeX Live Docker image and grab a ☕️.
+Pull the unofficial official TeX Live Docker image.
 
 ```zsh
 docker pull texlive/texlive:latest
@@ -92,8 +101,6 @@ Add the following to `.devcontainer.json` or  `.devcontainer/devcontainer.json` 
 ```
 
 Run **Dev Containers: Reopen in Container** from the Command Palette.
-
-Write $\LaTeX$ and love life.
 
 When finished, run **Dev Containers: Reopen Folder Locally**.
 

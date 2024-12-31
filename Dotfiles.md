@@ -1,4 +1,5 @@
 # Dotfiles
 
-- [Dotfiles (GitHub)](https://github.com/lukejanicke/dotfiles)
+- [dotfiles (GitHub)](https://github.com/lukejanicke/dotfiles)
 
+Get dotfiles using **curl** or [[wget]].

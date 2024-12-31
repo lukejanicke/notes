@@ -3,9 +3,9 @@
 - [Zsh](https://www.zsh.org) / [Documentation](https://zsh.sourceforge.io/Doc/Release/zsh_toc.html) / [14.8 Filename Generation (globbing)](https://zsh.sourceforge.io/Doc/Release/Expansion.html#Filename-Generation)
 - [Perl-Compatible Regular Expressions (PCRE)](https://www.pcre.org)
 
-`zmv` is a Zsh function to move or rename files using pattern matching.
+**zmv** is a [[Zsh]] function to move or rename files using pattern matching.
 
-`zmv` is documented in the `man` page for `zshcontrib`.
+**zmv** is documented in the `man` page for `zshcontrib`.
 
 ```zsh
 man zshcontrib
@@ -15,7 +15,7 @@ Press <kbd>/</kbd> and type `zmv` to search for and skip to the `zmv` section.
 
 ## Usage
 
-Run `autoload zmv` to make the function available in Terminal commands.
+Run `autoload zmv` to make the function available in commands.
 
 ```zsh
 autoload zmv
@@ -34,21 +34,21 @@ Rename a single file.
 zmv 'about.txt' 'README.md'
 ```
 
-Batch rename files and folders in the current directory using Zsh glob patterns.
+Batch rename files and folders in the current directory using [[Zsh]] glob patterns.
 
 ```zsh
 # Replace 'red' with 'blue' in all file and folder names
 zmv '(*)red(*)' '$1blue$2'
 ```
 
-Batch rename using Zsh extended glob patterns.
+Batch rename using [[Zsh]] extended glob patterns.
 
 ```zsh
 # Replace `red` in filenames (not folders) with `blue`, except in 'bored.txt'
 zmv '(*)(#q)red(*)~bored.txt' '$1blue$2'
 ```
 
-Check Zsh glob pattern matches with `print`.
+Check [[Zsh]] glob pattern matches with `print`.
 
 ```
 # List all files (not folders) with `red` in filename, except `bored.txt`.

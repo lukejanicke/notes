@@ -14,7 +14,7 @@
 | `docker start -ai container_name`          | Restart a container with an interactive shell.         |
 | `docker rm container_name`                 | Remove a container.                                    |
 
-## Installation
+## Install
 
 Install [Rosetta 2](https://support.apple.com/en-au/102527).
 

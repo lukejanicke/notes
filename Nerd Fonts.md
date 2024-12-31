@@ -10,10 +10,10 @@ Install [[Docker]].
 Create a working directory with a `fonts` subdirectory.
 
 ```shell
-mkdir -p ~/nerdfonts/fonts
+mkdir -p ~/.nerdfonts/fonts
 ```
 
-Copy fonts to be patched into `~/nerdfonts/fonts`.
+Copy fonts to be patched into `~/.nerdfonts/fonts`.
 
 Run [[Docker]] from the working directory.
 

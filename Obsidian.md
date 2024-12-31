@@ -49,6 +49,28 @@
 Add snippets to `.obsidian/snippets` in a vault.
 
 ```css
+/* .obsidian/snippets/borders.css
+  Remove fine borders from Workspace panes and tabs. */
+```
+
+```css
+/* .obsidian/snippets/checklists.css
+  Remove line-through from checklists. */
+```
+
+```css
+/* .obsidian/snippets/indentation.css
+   Book style paragraph indentation.
+   Designed to work with Minimal theme. */
+[class="cm-line"]:not(:has(> br:only-child))+[class="cm-line"],
+[class="cm-line"]:not(:has(> br:only-child))+[class="cm-active cm-line"],
+[class="cm-active cm-line"]:not(:has(> br:only-child))+[class="cm-line"],
+[class="cm-active cm-line"]:not(:has(> br:only-child))+[class="cm-active cm-line"] {
+    text-indent: 2em;
+}
+```
+
+```css
 /* .obsidian/snippets/kbd.css
   Style for <kbd> elements. */
 
@@ -65,24 +87,6 @@ Add snippets to `.obsidian/snippets` in a vault.
 ```
 
 ```css
-/* .obsidian/snippets/table.css
-  Prettier tables. */
-
-body {
-  --table-border-width: 0px;
-  --table-header-weight: var(--font-bold);
-  --table-header-color: var(--text-normal);
-  --table-header-background: var(--background-primary);
-  --table-header-background-hover: inherit;
-  --table-background: var(--background-primary);
-  --table-row-alt-background: var(--background-primary-alt);
-  --table-row-background-hover: var(--background-primary);
-  --table-row-alt-background-hover: var(--background-primary-alt);
-  --table-column-alt-background: inherit;
-}
-```
-
-```css
 /* .obsidian/snippets/readable-line-width.css
   Increase the “readable” line width just a bit.
   Default is 700px. */
@@ -93,13 +97,21 @@ body {
 ```
 
 ```css
-/* .obsidian/snippets/indentation.css
-   Book style paragraph indentation.
-   Designed to work with Minimal theme. */
-[class="cm-line"]:not(:has(> br:only-child)) + [class="cm-line"],
-[class="cm-line"]:not(:has(> br:only-child)) + [class="cm-active cm-line"],
-[class="cm-active cm-line"]:not(:has(> br:only-child)) + [class="cm-line"],
-[class="cm-active cm-line"]:not(:has(> br:only-child)) + [class="cm-active cm-line"] {
-    text-indent: 2em;
+/* .obsidian/snippets/table.css
+  Prettier tables. */
+
+body {
+  /* --table-header-size: var(--text-normal); */
+  --table-border-width: 0px;
+  /* --table-header-weight: var(--font-bold); */
+  /* --table-header-color: var(--text-normal); */
+  --table-header-background: var(--background-primary);
+  --table-header-background-hover: inherit;
+  --table-background: var(--background-primary);
+  --table-row-alt-background: var(--background-primary-alt);
+  --table-row-background-hover: var(--background-primary);
+  --table-row-alt-background-hover: var(--background-primary-alt);
+  --table-column-alt-background: inherit;
+  --table-add-button-background: var(--background-modifier-hover);
 }
 ```

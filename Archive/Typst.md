@@ -7,7 +7,7 @@
 > [!note] Typst and Tinymist Typst
 > The **Tinymist Typst** extension for [[Visual Studio Code]] bundles the **Typst** compiler.
 
-## Installation
+## Install
 
 Install **Typst** with [Homebrew](Homebrew.md).
 

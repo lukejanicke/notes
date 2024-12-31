@@ -4,25 +4,26 @@
 - [Installing Node.js via package managers: nvm](https://nodejs.org/en/download/package-manager/all#nvm)
 - [nvm-sh](https://github.com/nvm-sh) / [nvm](https://github.com/nvm-sh/nvm)
 
-## Installation
+## Install
 
-Install **nvn**.
+Install **nvm**.
 
 ```zsh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 ```
 
-Copy the following to `~/.zshrc`.
+Configure **nvm** in [[Zsh]].
 
 ```zsh
+# ~/.zshrc
+
+# Node
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 ```
 
-Close and restart Terminal or `source ~/.zshrc`.
-
-Verify the installation.
+Source and verify the installation.
 
 ```zsh
 nvm -v

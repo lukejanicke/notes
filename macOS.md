@@ -1,12 +1,19 @@
 # macOS
 
-- [ ] Add **1Password** to *AutoFill & Passwords*.
-- [ ] Change *Language & Region / Preferred Languages* to **English (Australia)** when Apple Intelligence becomes available with Australian English language settings. Update settings for *Apple Intelligence & Siri*.
-- [ ] There is a bug in Sequoia with Preview and Continuous Scroll and Zoom to Fit.
+> [!bug] Preview
+> There seems to be a bug in Sequoia with Preview and Continuous Scroll and Zoom to Fit.
+
+## Launchpad
+
+Reset Launchpad layout.
+
+```shell
+defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock
+```
 
 ## Rosetta
 
-Install [Rosetta 2](https://support.apple.com/en-au/102527) when needed (e.g., for [[Docker]].
+Install [Rosetta 2](https://support.apple.com/en-au/102527) when needed (e.g., for [[Docker]]).
 
 ```shell
 softwareupdate --install-rosetta
@@ -43,7 +50,8 @@ softwareupdate --install-rosetta
 		- Show date **Never**
 		- Show the day of the week **OFF**
 		- Show AM/PM **OFF**
-	- Spotlight **Don’t Show in Menu Bar**
+	- Spotlight **Don’t show in menu bar**
+	- Siri **Don’t show in menu bar**
 - Desktop & Dock
 	- Double-click a window's title bar to **Fill**
 	- Minimise windows into application icon **ON**
@@ -53,15 +61,15 @@ softwareupdate --install-rosetta
 - Displays
 	- Color profile **sRGB IEC61966-2.1**
 	- Night Shift…
-		- Schedule **Sunset to Sunrise**
-		- Color temperature **Less Warm**
+		- Schedule **Sunset to sunrise**
+		- Color temperature **Less warm**
 - Screen Saver & Wallpaper
 	- **Sequoia** or **Sequoia Sunrise**
 	- Show as wallpaper **ON**
 	- Show on all Spaces **ON**
 - Screen Time / Share across devices **ON**
 - Lock Screen / Start Screen Saver when inactive **For 5 minutes**
-- Touch ID & Password / Rename fingerprints as ‘Right Index’ and such
+- Touch ID & Password / Rename fingerprints as “Right Index” and such
 - Keyboard
 	- Turn keyboard backlight off after inactivity **After 1 minute**
 	- Press <kbd>fn</kbd> key to **Do Nothing** (set to **Change Input Source** if using other keyboards)
@@ -81,7 +89,7 @@ softwareupdate --install-rosetta
 				- Show Spotlight search <kbd>command</kbd> <kbd>space</kbd>
 	- Input Sources / Edit… / **Australian**, **Pinyin - Simplified**
 	- Dictation **ON**
-	- Languages / Edit… / Select languages… **Australia**, **Chinese (Mandarin)**, **United States**
+	- Languages / Edit… / Select languages… **Australia**, **Chinese (Mandarin)**
 - Trackpad
 	- Point & Click / Tap to click **ON**
 	- More Gestures
@@ -103,13 +111,13 @@ softwareupdate --list-full-installers
 Download the latest installer.
 
 ```shell
-softwareupdate —-fetch-full-installer
+softwareupdate --fetch-full-installer
 ```
 
 Or a specific version.
 
 ```shell
-softwareupdate —-fetch-full-installer --full-installer-version 15.2
+softwareupdate --fetch-full-installer --full-installer-version 15.2
 ```
 
 Install the installer.

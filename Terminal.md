@@ -1,6 +1,6 @@
 # Terminal
 
-- [ ] Review shortcuts and move to [[Zsh]], [[Fish]] or [[WezTerm]] as needed.
+- [ ] Move shortcuts and commands to [[Terminal Commands and Shortcuts]].
 
 - [Terminal User Guide](https://support.apple.com/en-au/guide/terminal/welcome/mac) / [Keyboard shortcuts](https://support.apple.com/en-au/guide/terminal/trmlshtcts/mac)
 - [Catppuccin (GitHub)](https://github.com/catppuccin/Terminal.app)
@@ -62,16 +62,16 @@ touch .hushlogin
 
 From the **View**, select **Hide Marks**.
 
-Make sure **FiraCode Nerd Font Mono** is installed.
+Import modified **Catppuccin** profiles and set **Catppuccin Mocha M** default.
+
+The modified profiles set **IosevkaFixed Nerd Font Mono**.
 
 Remove default profiles.
-
-Import modified **Catppuccin** profiles.
 
 For new profiles, change the following settings.
 
 - Text
-	- Font: **PT Mono 13** or any preferred alternative
+	- Font: **IosevkaFixed Nerd Font Mono 13** or any preferred alternative
 - Window
 	- Title: **Terminal**
 	- Select **Working directory or arguments**, **Path**

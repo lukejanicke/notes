@@ -2,7 +2,7 @@
 
 - [FFmpeg](https://www.ffmpeg.org)
 
-## Installation
+## Install
 
 Install **`ffmpeg`** with [[Homebrew]].
 

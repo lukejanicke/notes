@@ -15,7 +15,7 @@ Create new Amazon Lightsail instance with Ubuntu 20.04 LTS.
 
 Create new static IP for the instance.
 
-## SetUp
+## Setup
 
 Change permissions on public key.
 

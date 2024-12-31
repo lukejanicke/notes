@@ -10,24 +10,25 @@
 - [x] [[fd]]
 - [x] [[FFmpeg]]
 - [x] [[Fish]]
-- [x] fzf
-- [x] git
-- [ ] ~~go~~
+- [x] [[fzf]]
+- [x] [[Git]]
+- [ ] [[Go]]
 - [x] [[mpv]]
 - [x] nvm (→ [[Node]])
-- [x] [[Neovim]]
+- [ ] [[Neovim]]
 - [ ] ~~[[Pandoc]]~~
 - [x] pyenv (→ [[Python]])
-- [x] ripgrep
-- [x] starship
-- [x] thefuck
-- [x] tlrc
-- [ ] ~~[[Typst]]~~
-- [x] wget
+- [x] [[ripgrep]]
+- [x] [[Starship]]
+- [x] [[thefuck]]
+- [x] [[tldr]]
+- [ ] [[Typst]]
+- [x] [[wget]]
 - [x] xz (See [[Python]])
+- [x] [[yt-dlp]]
 - [x] [[zoxide]]
 
-## Installation
+## Install
 
 First, install [[Command Line Tools]] manually.
 
@@ -37,13 +38,13 @@ Install **Homebrew** with the official install script.
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-For [[Zsh]], add the following to `~/.zprofile`.
+For [[Zsh]], the following is needed in `~/.zprofile`.
 
 ```zsh
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-For [[Fish]], add the following to `~/.config/fish/config.fish`.
+For [[Fish]], the following is needed in `~/.config/fish/config.fish`.
 
 ```shell
 fish_add_path /opt/homebrew/bin /opt/homebrew/sbin

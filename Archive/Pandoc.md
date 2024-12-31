@@ -2,7 +2,7 @@
 
 - [Pandoc](https://www.pandoc.org)
 
-## Installation
+## Install
 
 A macOS installer is available, but install **Pandoc** with [[Homebrew]].
 

@@ -1,9 +1,11 @@
 # tldr
 
+- [ ] Move commands to [[Terminal Commands and Shortcuts]].
+
 - [tldr (GitHub)](https://github.com/tldr-pages/tldr)
 - [tlrc (GitHub)](https://github.com/tldr-pages/tlrc)
 
-## Installation
+## Install
 
 Install the official **tldr** Rust client with [Homebrew](Homebrew.md).
 
@@ -11,7 +13,7 @@ Install the official **tldr** Rust client with [Homebrew](Homebrew.md).
 brew install tlrc
 ```
 
-## Usage
+## Commands
 
 | Command                                 | Action                                              |
 | --------------------------------------- | --------------------------------------------------- |

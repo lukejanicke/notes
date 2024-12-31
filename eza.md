@@ -2,7 +2,7 @@
 
 - [eza](https://eza.rocks) / [GitHub](https://github.com/eza-community/eza)
 
-## Installation
+## Install
 
 Install **eza** with [[Homebrew]].
 
@@ -10,16 +10,32 @@ Install **eza** with [[Homebrew]].
 brew install eza
 ```
 
-For [[Zsh]], add the following to `~/.zshrc`.
+## Configure
+
+Install a [[Nerd Fonts|Nerd Font]].
+
+Configure **eza** in [[Zsh]] and [[Fish]].
 
 ```shell
+# ~/.zshrc
+
+# eza
 alias ls='eza --color=always --icons=always'
 alias tree='eza --tree --color=always --icons=always'
 ```
 
-For [[Fish]], add the following to `~/.config/fish/config.fish`.
-
 ```shell
-alias ls='eza --color=always --icons=always'
-alias tree='eza --tree --color=always --icons=always'
+# ~/.config/fish/config.fish
+
+if status is-interactive
+
+    # eza
+    function ls
+        eza --color=always --icons=always $argv
+    end
+    function tree
+        eza --tree --color=always --icons=always $argv
+    end
+
+end
 ```

@@ -1,11 +1,20 @@
 # Fonts
 
+- [ ] Re-buid Iosevka, Iosevka Fixed, and Iosevka Terminal.
+- [ ] Build Inter from source with ligatures.
+- [ ] Build Symbols Nerd Font.
+
 See [[Iosevka]] for custom builds from source.
 
-- [x] Iosevka Custom
-	- [x] Iosevka Custom Sans
-	- [x] Iosevka Custom Sans Quasi-Proportional
-	- [x] Iosevka Custom Sans Terminal
+- [ ] Inter
+- [ ] Iosevka
+- [x] Iosevka Aile
+- [x] Iosevka Etoille
+- [ ] Iosevka Fixed
+- [x] Iosevka Fixed Slab
+- [x] Iosevka Slab
+- [ ] Iosevka Terminal
+- [x] Iosevka Terminal Slab
 - [x] [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
 - [x] [New Computer Modern](https://ctan.org/pkg/newcomputermodern)
 
@@ -15,6 +24,7 @@ See [[Iosevka]] for custom builds from source.
 
 See [[Nerd Fonts]] for patching.
 
-- [ ] Iosevka Nerd Font
-	- [ ] IosevkaCustomSans Nerd Font
-	- [ ] IosevkaCustomSansTerminal Nerd Font
+- [x] Iosevka Nerd Font
+- [x] IosevkaCustomSans Nerd Font
+- [x] IosevkaCustomSansTerminal Nerd Font
+- [ ] Symbols Nerd Font

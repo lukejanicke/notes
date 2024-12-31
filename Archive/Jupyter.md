@@ -8,7 +8,7 @@
 > [!note] Minimal installation for Visual Studio Code
 > Only **IPython** is required to run Jupyter notebooks in Visual Studio Code.
 
-## Installation
+## Install
 
 Install **IPython** and **`nbconvert`** with [[Python|Pip]].
 

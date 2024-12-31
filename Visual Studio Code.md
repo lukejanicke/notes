@@ -4,13 +4,14 @@
 - [Visual Studio Code Keyboard Shortcuts for macOS (PDF)](Visual Studio Code Keyboard Shortcuts for macOS.pdf)
 
 Note, **GitHub Copilot** and **Microsoft IntelliCode** work together.
+
 ## CLI
 
 From the command palette, run *Shell Command: Install 'code' command in PATH*.
 
 ## Keyboard shortcuts
 
-See [[Visual Studio Code Keyboard Shortcuts for macOS.pdf]] for more.
+See [[Visual Studio Code Keyboard Shortcuts for macOS.pdf|Visual Studio Code Keyboard Shortcuts for macOS]] for more.
 
 | Shortcut                                                            | Description                                    |
 | ------------------------------------------------------------------- | ---------------------------------------------- |

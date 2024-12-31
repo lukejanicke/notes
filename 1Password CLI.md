@@ -2,7 +2,7 @@
 
 - [1Password CLI](https://1password.com/Downloads/Command-line) / [Documentation](https://developer.1password.com/docs/cli)
 
-## Installation
+## Install
 
 Install **1Password CLI** with [[Homebrew]].
 

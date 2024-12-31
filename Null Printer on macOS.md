@@ -2,13 +2,13 @@
 
 Run `cUpsctl WebInterface=yes`.
 
-Open [localhost:631](http://localhost:631).
+Open [localhost:631](http://localhost:631). (May need to disable Cloudflare WARP.)
 
 Go to **Administration**.
 
 Select **Add Printer**.
 
-Enter root username and password.
+Ente username and password.
 
 Choose *LPD/LPR Host or Printer* and **Continue**.
 
@@ -18,6 +18,6 @@ Set *Name*, *Description* and *Location* to something silly, select *Share This 
 
 Choose *Make* ‘Generic’ and **Continue**.
 
-Choose Model ‘Generic PostScript Printer (en)’ and **Add Printer**.
+Choose *Model* ‘Generic PostScript Printer (en)’ and **Add Printer**.
 
-Set *Media Size* to A4 and **Set Default Options**.
+Set *Media Size* to ‘A4’ and **Set Default Options**.

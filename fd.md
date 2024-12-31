@@ -2,11 +2,10 @@
 
 - [fd (GitHub)](https://github.com/sharkdp/fd)
 
-## Installation
+## Install
 
 Install **fd** with [[Homebrew]].
 
 ```shell
 brew install fd
 ```
-

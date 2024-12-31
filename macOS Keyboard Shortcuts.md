@@ -2,10 +2,10 @@
 
 - [Mac keyboard shortcuts](https://support.apple.com/en-au/102650)
 
-| Shortcut                        | Description   |
-| ------------------------------- | ------------- |
-| <kbd>command</kbd> <kbd>S</kbd> | Save document |
-| <kbd>command</kbd> <kbd>P</kbd> | Print         |
+| Shortcut                        | Description    |
+| ------------------------------- | -------------- |
+| <kbd>command</kbd> <kbd>S</kbd> | Save document  |
+| <kbd>command</kbd> <kbd>P</kbd> | Print document |
 
 ## Editing
 
@@ -20,8 +20,8 @@
 
 ### Moving
 
-| Shortcut                                  | Description                           |
-| ----------------------------------------- | ------------------------------------- |
+| Shortcut                            | Description                           |
+| ----------------------------------- | ------------------------------------- |
 | <kbd>option</kbd> <kbd>right</kbd>  | Move cursor right by word             |
 | <kbd>option</kbd> <kbd>left</kbd>   | Move cursor left by word              |
 | <kbd>command</kbd> <kbd>right</kbd> | Move cursor to end of line            |
@@ -56,7 +56,7 @@
 
 ## Window tiling keyboard shortcuts
 
-These shortcuts have been remapped in Settings / Keyboard / Keyboard Shortcuts… / App Shortcuts. See [Mac window tiling icons & keyboard shortcuts](https://sUpport.apple.com/en-au/guide/mac-help/mchl9674d0b0/mac) for all shortcuts and defaults.
+These shortcuts can be mapped in Settings / Keyboard / Keyboard Shortcuts… / App Shortcuts. See [Mac window tiling icons & keyboard shortcuts](https://sUpport.apple.com/en-au/guide/mac-help/mchl9674d0b0/mac) for all shortcuts and defaults.
 
 > [!warning] Conflicts
 > Some of these key maps conflict with app-specific shortcuts. For example, most of them conflict with other commands in Visual Studio Code. These conflicts will need to be resolved on a per app basis.

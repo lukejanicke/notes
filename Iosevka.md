@@ -19,13 +19,13 @@ brew install ttfautohint
 Clone the **Iosevka** repository into `~/iosevka`.
 
 ```shell
-git clone --depth=1 https://github.com/be5invis/Iosevka.git ~/iosevka
+git clone --depth=1 https://github.com/be5invis/Iosevka.git ~/.iosevka
 ```
 
-Run `npm install` in `~/iosevka`.
+Run `npm install` in `~/.iosevka`.
 
 ```shell
-cd ~/iosevka
+cd ~/.iosevka
 ```
 
 ```shell
@@ -34,17 +34,11 @@ npm install
 
 ## Build
 
-Copy `private-build-plans.sample.toml` to `private-build-plans.toml`.
+Get `private-build-plans.toml` from [[Dotfiles]] with [[wget]].
 
 ```shell
-cp private-build-plans.sample.toml private-build-plans.toml
+wget -P ~/.iosevka https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.iosevka/private-build-plans.toml
 ```
-
-Edit `private-build-plans.toml` with custom build plans.
-
-Use [Iosevka Customizer](https://typeof.net/Iosevka/customizer) to generate build plans for `private-build-plans.toml`.
-
-Refer to [Building Iosevka from Source](https://github.com/be5invis/Iosevka/blob/main/doc/custom-build.md) for further build plan options.
 
 Run `npm run build -- contents::Iosevka` to build fonts.
 
@@ -77,7 +71,6 @@ Grab the font files from `~/iosevka/dist/`.
 - Discretionary ligatures
 - Build `ttf-unhinted` only
 
-`private-build-plans.toml` is not (yet) included in [dotfiles](https://github.com/lukejanicke/dotfiles).
 
 ```toml
 #############

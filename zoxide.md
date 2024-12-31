@@ -1,7 +1,5 @@
 # zoxide
 
-> A smarter `cd` command for your terminal
-
 - [zoxide (GitHub)](https://github.com/ajeetdsouza/zoxide)
 
 ## Usage
@@ -18,7 +16,7 @@
 | `zi foo`                                | `cd` with interactive selection (using [[fzf]])         |
 | `z foo` <kbd>space</kbd> <kbd>tab</kbd> | show interactive completions                            |
 
-# Installation
+## Install
 
 Install **zoxide** with [[Homebrew]].
 
@@ -26,16 +24,26 @@ Install **zoxide** with [[Homebrew]].
 brew install zoxide
 ```
 
-For [[Zsh]], add the following to `~/.zshrc`.
+Configure **zoxide** in [[Zsh]] and [[Fish]].
 
 ```shell
+# ~/.zshrc
+
+# zoxide
 eval "$(zoxide init zsh)"
 alias cd="z"
 ```
 
-For [[Fish]], add the following to `~/.config/fish/config.fish`.
-
 ```shell
-zoxide init fish | source
-alias cd='z'
+# ~/.config/fish/config.fish
+
+if status is-interactive
+
+    # zoxide
+    zoxide init fish | source
+    function cd
+        z $argv
+    end
+
+end
 ```

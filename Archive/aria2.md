@@ -2,7 +2,7 @@
 
 - [aria2](https://aria2.github.io)
 
-## Installation
+## Install
 
 Install **aria2** with [Homebrew](Homebrew.md).
 

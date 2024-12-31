@@ -36,7 +36,7 @@ Press <kbd>Command</kbd> <kbd>,</kbd> to open Preferences.
 	- Show all filename extensions **ON**
 	- Deselect all other options
 	- Keep folders on top: **In windows when sorting by name**
-	- When performing a search: **Search This Mac**
+	- When performing a search: **Search this Mac**
 
 ## Toolbar
 
@@ -61,7 +61,7 @@ Right click on the Toolbar and select **Customise Toolbar…**.
 - Favourites
 	- AirDrop
 	- Recent
-	- user folder
+	- lukejanicke
 	- Applications
 	- Downloads
 	- *Add other folders for convenience as needed*

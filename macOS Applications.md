@@ -19,21 +19,24 @@
 ## Download
 
 - [x] [1.1.1.1](https://one.one.one.one) (maybe switch to [NextDNS](https://nextdns.io) in the future)
-- [x] 1Password for Mac
-- [ ] Blender
+- [x] [1Password](https://1password.com)
+- [ ] [Blender](https://www.blender.org)
 - [x] [ChatGPT](https://openai.com)
-- [ ] Discord
+- [x] [Claude](https://claude.ai/download)
+- [ ] [Discord](https://discord.com)
 - [x] [[Docker]]
-- [ ] GitHub Desktop
+- [ ] [GitHub Desktop](https://github.com/apps/desktop)
 - [x] [Ghostty](https://ghostty.org)
-- [ ] IINA
-- [x] JetBrains CLion
-- [x] JetBrains PyCharm
+- [ ] [IINA](https://iina.io)
+- [x] JetBrains [CLion](https://www.jetbrains.com/clion/)
+- [x] JetBrains [PyCharm](https://www.jetbrains.com/pycharm/)
+- [x] JetBrains [RustRover](https://www.jetbrains.com/rust/)
 - [x] MacTeX ([[LaTeX]])
 - [x] Microsoft [[Visual Studio Code]]
-- [ ] Mozilla Firefox
+- [ ] [Mozilla Firefox](https://www.mozilla.org)
 - [x] [[Obsidian]]
-- [ ] Skim
-- [ ] Tencent Meeting
-- [x] [[WezTerm]]
-- [ ] Zoom
+- [ ] [Skim](https://skim-app.sourceforge.io)
+- [ ] [Tencent Meeting](https://meeting.tencent.com)
+- [ ] [Zoom](https://www.zoom.com)
+
+Keep an eye on [Zed](https://zed.dev) and [Lapce](https://lap.dev/lapce/).
