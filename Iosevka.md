@@ -16,7 +16,7 @@ Install `ttfautohint` with [[Homebrew]].
 brew install ttfautohint
 ```
 
-Clone the **Iosevka** repository into `~/iosevka`.
+Clone the **Iosevka** repository into `~/.iosevka`.
 
 ```shell
 git clone --depth=1 https://github.com/be5invis/Iosevka.git ~/.iosevka
@@ -50,16 +50,16 @@ Grab the font files from `~/iosevka/dist/`.
 
 ## Fonts
 
-| Font                  | Style                         | Nerd Font | Use                              |
-| --------------------- | ----------------------------- | --------- | -------------------------------- |
-| Iosevka               | Proportional                  | Propo     | Visual Studio Code (alternative) |
-| Iosevka Slab          | Proportional, Serif           |           |                                  |
-| Iosevka Terminal      | Monospace                     | Mono      |                                  |
-| Iosevka Terminal Slab | Monospace, Serif              |           |                                  |
-| Iosevka Fixed         | Monospace, No Ligation        | Mono      | Terminal, WezTerm                |
-| Iosevka Fixed Slab    | Monospace, Serif, No Ligation |           |                                  |
-| Iosevka Aile          | Quasi-Proportional            |           | Visual Studio Code (main)        |
-| Iosevka Etoile        | Quasi-Proportional, Serif     |           |                                  |
+| Font                  | Style                         |
+| --------------------- | ----------------------------- |
+| Iosevka               | Proportional                  |
+| Iosevka Slab          | Proportional, Serif           |
+| Iosevka Terminal      | Monospace                     |
+| Iosevka Terminal Slab | Monospace, Serif              |
+| Iosevka Fixed         | Monospace, No Ligation        |
+| Iosevka Fixed Slab    | Monospace, Serif, No Ligation |
+| Iosevka Aile          | Quasi-Proportional            |
+| Iosevka Etoile        | Quasi-Proportional, Serif     |
 
 ## Builds
 

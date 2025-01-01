@@ -40,7 +40,3 @@ Verify the installation.
 ```zsh
 node -v
 ```
-
-## npx
-
-Use `npx <package>` to run packages whether they are local, global, or even not installed.

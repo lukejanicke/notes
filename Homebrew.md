@@ -14,7 +14,6 @@
 - [x] [[Git]]
 - [ ] [[Go]]
 - [x] [[mpv]]
-- [x] nvm (→ [[Node]])
 - [ ] [[Neovim]]
 - [ ] ~~[[Pandoc]]~~
 - [x] pyenv (→ [[Python]])
