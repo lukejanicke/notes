@@ -5,6 +5,11 @@
 
 ## Launchpad
 
+
+> [!bug] Sequoia 15.2
+> This has stopped working as of macOS Sequoia 15.2.
+
+
 Reset Launchpad layout.
 
 ```shell
