@@ -36,7 +36,7 @@
 - [ ] [Mozilla Firefox](https://www.mozilla.org)
 - [x] [[Obsidian]]
 - [ ] [Skim](https://skim-app.sourceforge.io)
-- [ ] [Tencent Meeting](https://meeting.tencent.com)
+- [x] [Tencent Meeting](https://meeting.tencent.com)
 - [ ] [Zoom](https://www.zoom.com)
 
 Keep an eye on [Zed](https://zed.dev) and [Lapce](https://lap.dev/lapce/).
