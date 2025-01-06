@@ -5,7 +5,7 @@
 
 ## Setup
 
-Install [[Docker]].
+Install [Docker](Docker.md).
 
 Create a working directory with a `fonts` subdirectory.
 
@@ -15,7 +15,7 @@ mkdir -p ~/.nerdfonts/fonts
 
 Copy fonts to be patched into `~/.nerdfonts/fonts`.
 
-Run [[Docker]] from the working directory.
+Run [Docker](Docker.md) from the working directory.
 
 ```shell
 docker run -it --name font-patcher -v "$(pwd):/work" -w /work ubuntu:latest /bin/bash
@@ -55,7 +55,7 @@ Update the font patcher to use Python 3.
 sed -i '1s/python/python3/' font-patcher
 ```
 
-Exit the [[Docker]] container.
+Exit the [Docker](Docker.md) container.
 
 ```shell
 exit
@@ -120,7 +120,7 @@ Patch  **Symbols Nerd Font Propo** (manually appending **Propo** to the patched 
 
 # Symbols Nerd Font Propo
 
-Install `fonttools` with [[Python|pip]].
+Install `fonttools` with [pip](Python.md).
 
 ```shell
 pip install fonttools
