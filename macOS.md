@@ -80,8 +80,6 @@ softwareupdate --install-rosetta
 	- Press <kbd>fn</kbd> key to **Do Nothing** (set to **Change Input Source** if using other keyboards)
 	- Keyboard Shortcuts… *Turn off all except…*
 		- Mission Control
-			- Mission Control <kbd>control</kbd> <kbd>up</kbd>
-			- Application Windows <kbd>control</kbd> <kbd>down</kbd>
 			- Mission Control
 				- Move left a space <kbd>control</kbd> <kbd>left</kbd>
 				- Move right a space <kbd>control</kbd> <kbd>right</kbd>
