@@ -1,4 +1,3 @@
-
 # Nerd Fonts
 
 - [Nerd Fonts](https://www.nerdfonts.com/)
@@ -56,51 +55,6 @@ Update the font patcher to use Python 3.
 sed -i '1s/python/python3/' font-patcher
 ```
 
-## Patching
-
-Run the font patcher for each font file in `./fonts`.
-
-```shell
-for file in ./fonts/*.ttf; do ./font-patcher -c "$file"; done
-```
-
-Patch *Mono* and *Propo* variants.
-
-```shell
-for file in ./fonts/*.ttf; do ./font-patcher -c -s "$file"; done
-```
-
-```shell
-for file in ./fonts/*.ttf; do ./font-patcher -c --variable-width-glyphs "$file"; done
-```
-
-## Symbols Nerd Font
-
-Download `NerdFontsSymbolsNerdFontBlank.sfd` for patching **Symbols Nerd Font**.
-
-```shell
-wget -P fonts https://raw.githubusercontent.com/ryanoasis/nerd-fonts/refs/heads/master/src/unpatched-fonts/NerdFontsSymbolsOnly/NerdFontsSymbolsNerdFontBlank.sfd
-```
-
-Patch **Symbols Nerd Font**.
-
-```shell
-./font-patcher -c --ext ttf fonts/NerdFontsSymbolsNerdFontBlank.sfd
-```
-
-Patch **Symbols Nerd Font Mono** and  **Symbols Nerd Font Propo**.
-
-```shell
-./font-patcher -c -s --ext ttf fonts/NerdFontsSymbolsNerdFontBlank.sfd
-```
-
-```shell
-./font-patcher -c --variable-width-glyphs --ext ttf fonts/NerdFontsSymbolsNerdFontBlank.sfd
-```
-
-> [!bug] Symbol Nerd Font Propo
-> `--variable-width-glyphs` builds a **Propo** font but names it **Symbols Nerd Font**, which conflicts with the real **Symbols Nerd Font**. See [[#Symbols Nerd Font Propo]] for renaming the font using `fonttools`.
-
 Exit the [[Docker]] container.
 
 ```shell
@@ -113,6 +67,57 @@ Use the container again at any time.
 docker start -ai font-patcher
 ```
 
+## Patching
+
+Run the font patcher for each font file in `./fonts`.
+
+```shell
+for file in ./fonts/*.ttf; do ./font-patcher -c "$file"; done
+```
+
+Patch *Mono* variants.
+
+```shell
+for file in ./fonts/*.ttf; do ./font-patcher -c -s "$file"; done
+```
+
+Patch *Propo* variants.
+
+```shell
+for file in ./fonts/*.ttf; do ./font-patcher -c --variable-width-glyphs "$file"; done
+```
+
+## Symbols Nerd Font
+
+Get  `Symbols Custom.sfd` from [Dotfiles](Dotfiles.md) with [wget](wget.md).
+
+```shell
+wget -P ~/.nerdfonts/fonts https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.nerdfonts/Symbols\ Custom.sfd
+```
+
+Patch **Symbols Nerd Font**.
+
+```shell
+./font-patcher -c --ext ttf fonts/Symbols\ Custom.sfd
+```
+
+Patch **Symbols Nerd Font Mono**.
+
+```shell
+./font-patcher -c -s --ext ttf fonts/Symbols\ Custom.sfd
+```
+
+Make sure the actual **Symbols Nerd Font** is renamed or moved to a safe location.
+
+Patch  **Symbols Nerd Font Propo** (manually appending **Propo** to the patched file).
+
+```shell
+./font-patcher -c --variable-width-glyphs --ext ttf fonts/Symbols\ Custom.sfd
+```
+
+> [!bug] Symbol Nerd Font Propo
+> `--variable-width-glyphs` builds a **Propo** font but names it **Symbols Nerd Font**, which conflicts with the real **Symbols Nerd Font**. See [[#Symbols Nerd Font Propo]] for renaming the font using `fonttools`.
+
 # Symbols Nerd Font Propo
 
 Install `fonttools` with [[Python|pip]].
@@ -121,28 +126,24 @@ Install `fonttools` with [[Python|pip]].
 pip install fonttools
 ```
 
-```shell
-cd Documents/Fonts/Symbols\ Nerd\ Font/
-```
-
 Decompile **Symbols Nerd Font Propo.ttf** to XML.
 
 ```shell
-ttx Symbols\ Nerd\ Font\ Propo.ttf
+ttx SymbolsCustom\ Nerd\ Font\ Propo\ Regular.ttf
 ```
 
 Edit **Symbols Nerd Font Propo.ttx**.
 
 ```shell
-code Symbols\ Nerd\ Font\ Propo.ttx
+code SymbolsCustom\ Nerd\ Font\ Propo\ Regular.ttx
 ```
 
-Replace six instances of `Symbols Nerd Font` with `Symbold Nerd Font Propo`.
+Replace six instances of `SymbolsCustom Nerd Font` with `SymbolsCustom Nerd Font Propo`.
 
-Replace two instances of `SymbolsNF` with `SymbolsNFP`.
+Replace two instances of `SymbolsCustomNF` with `SymbolsCustomNFP`.
 
-Recompile **Symbols Nerd Font Propo.ttf**.
+Recompile **Symbols Nerd Font Propo.ttf** (delete or rename the original).
 
 ```shell
-ttx Symbols Nerd Font Propo.ttf
+ttx SymbolsCustom\ Nerd\ Font\ Propo\ Regular.ttx
 ```
