@@ -1,10 +1,11 @@
 # Fonts
 
-- [ ] Rename **Kpfonts** internally to **KP**.
+- [Inter](https://rsms.me/inter/)
+- Iosevka (see [Iosevka](Iosevka.md))
+- Nerd Fonts (see [Nerd Fonts](Nerd%20Fonts.md))
 
-- [x] [Inter](https://rsms.me/inter/)
-- [x] [KP Fonts (OTF)](https://ctan.org/pkg/kpfonts-otf?lang=en)
-- [x] [New Computer Modern](https://ctan.org/pkg/newcomputermodern)
+- [x] Inter
+- [x] Inter Display
 
 ## Iosevka
 
@@ -19,7 +20,7 @@ Download and install the Super TTC packages from GitHub.
 
 Super TTC packages for monospace variants contain spacing variants **default**, **Term**, and **Fixed**.
 
-Prebuilt Iosevka variants are narrower by default, with a normal width value of **500**. See [Iosevka](Iosevka.md) for instructions on building **Iosevka Custom** from source to with a normal width value of **600**.
+Prebuilt Iosevka variants are narrower by default, with a normal width value of **500**. See [Iosevka](Iosevka.md) for instructions on building **Iosevka Custom** from source with a normal width value of **600**.
 
 - [x] Iosevka Custom
 - [x] Iosevka Custom Slab
