@@ -10,10 +10,10 @@ Install [Docker](Docker.md).
 Create a working directory with a `fonts` subdirectory.
 
 ```shell
-mkdir -p ~/.nerdfonts/fonts
+mkdir -p ~/nerdfonts/fonts
 ```
 
-Copy fonts to be patched into `~/.nerdfonts/fonts`.
+Copy fonts to be patched into `~/nerdfonts/fonts`.
 
 Run [Docker](Docker.md) from the working directory.
 
@@ -92,7 +92,7 @@ for file in ./fonts/*.ttf; do ./font-patcher -c --variable-width-glyphs "$file";
 Get  `Symbols Custom.sfd` from [Dotfiles](Dotfiles.md) with [wget](wget.md).
 
 ```shell
-wget -P ~/.nerdfonts/fonts https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.nerdfonts/Symbols\ Custom.sfd
+wget -P ~/nerdfonts/fonts https://raw.githubusercontent.com/lukejanicke/dotfiles/main/nerdfonts/Symbols\ Custom.sfd
 ```
 
 Patch **Symbols Nerd Font**.

@@ -15,16 +15,16 @@ Install `ttfautohint` with [Homebrew](Homebrew.md).
 brew install ttfautohint
 ```
 
-Clone the **Iosevka** repository into `~/.iosevka`.
+Clone the **Iosevka** repository into `~/iosevka`.
 
 ```shell
-git clone --depth=1 https://github.com/be5invis/Iosevka.git ~/.iosevka
+git clone --depth=1 https://github.com/be5invis/Iosevka.git ~/iosevka
 ```
 
-Run `npm install` in `~/.iosevka`.
+Run `npm install` in `~/iosevka`.
 
 ```shell
-cd ~/.iosevka
+cd ~/iosevka
 ```
 
 ```shell
@@ -36,7 +36,7 @@ npm install
 Get `private-build-plans.toml` from [Dotfiles](Dotfiles.md) with [wget](wget.md).
 
 ```shell
-wget -P ~/.iosevka https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.iosevka/private-build-plans.toml
+wget -P ~/iosevka https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.iosevka/private-build-plans.toml
 ```
 
 Build the fonts.
@@ -45,7 +45,7 @@ Build the fonts.
 npm run build -- ttf-unhinted::IosevkaCustom ttf-unhinted::IosevkaCustomSlab ttf-unhinted::IosevkaCustomCurly ttf-unhinted::IosevkaCustomCurlySlab ttf-unhinted::IosevkaCustomTerminal ttf-unhinted::IosevkaCustomTerminalSlab ttf-unhinted::IosevkaCustomFixed ttf-unhinted::IosevkaCustomFixedSlab ttf-unhinted::IosevkaCustomAile ttf-unhinted::IosevkaCustomEtoile
 ```
 
-Grab the font files from `~/.iosevka/dist/`.
+Grab the font files from `~/iosevka/dist/`.
 
 ### Update
 
