@@ -4,7 +4,7 @@
 
 ## Install
 
-Install **ripgrep** with [[Homebrew]].
+Install **ripgrep** with [Homebrew](Homebrew.md).
 
 ```shell
 brew install ripgrep

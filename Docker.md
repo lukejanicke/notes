@@ -28,7 +28,7 @@ Download and install **Docker Desktop** directly from the official website.
 
 Browse and search for images in the **Docker** app.
 
-Pull an image using the app or the `docker pull` command in [[Terminal]].
+Pull an image using the app or the `docker pull` command in [Terminal](Terminal.md).
 
 ```zsh
 docker pull image_namespace/image_name:<tag>

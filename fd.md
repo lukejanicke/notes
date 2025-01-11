@@ -4,7 +4,7 @@
 
 ## Install
 
-Install **fd** with [[Homebrew]].
+Install **fd** with [Homebrew](Homebrew.md).
 
 ```shell
 brew install fd

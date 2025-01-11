@@ -3,12 +3,12 @@
 - [MacTeX](https://tug.org/mactex/)
 - [LaTeX Workshop](https://github.com/James-Yu/LaTeX-Workshop) / [Snippets and shortcuts](https://github.com/James-Yu/LaTeX-Workshop/wiki/Snippets)
 
-See [[LaTeX Cheat Sheet.pdf|LaTeX Cheat Sheet]] for common shortcuts.
+See [LaTeX Cheat Sheet](LaTeX%20Cheat%20Sheet.pdf) for common shortcuts.
 ## Local installation
 
 Install **TeX Live** locally using one of the two official Mac packages—**MacTeX** or **BasicTeX**.
 
-Add the applicable `PATH` to [[Zsh]] and [[Fish]].
+Add the applicable `PATH` to [Zsh](Zsh.md) and [Fish](Fish.md).
 
 ```zsh
 # ~/.zshenv
@@ -24,10 +24,10 @@ export PATH="/usr/local/texlive/2024basic/bin/universal-darwin:$PATH"
 # ~/.config/fish/config.fish
 
 # MacTeX
-set -gx PATH /usr/local/texlive/2024/bin/universal-darwin $PATH
+fish_add_path /usr/local/texlive/2024/bin/universal-darwin
 
 # BasicTeX
-set -gx PATH /usr/local/texlive/2024basic/bin/universal-darwin $PATH
+fish_add_path /usr/local/texlive/2024basic/bin/universal-darwin
 ```
 
 Source and verify the installation.
@@ -78,7 +78,7 @@ Create and run a Docker container from the TeX Live image with an interactive Ba
 docker run -it --name texlive -v $PWD:/workdir texlive/texlive:latest bash
 ```
 
-See [[Docker]] for more Terminal Commands.
+See [Docker](Docker.md) for more Terminal Commands.
 
 ## Docker and Visual Studio Code
 

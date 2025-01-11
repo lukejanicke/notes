@@ -4,7 +4,7 @@
 
 ## Install
 
-A macOS installer is available, but install **Pandoc** with [[Homebrew]].
+A macOS installer is available, but install **Pandoc** with [Homebrew](../Homebrew.md).
 
 ```zsh
 brew install pandoc

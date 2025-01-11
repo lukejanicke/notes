@@ -6,13 +6,13 @@
 
 Install a [Nerd Font](https://www.nerdfonts.com) such as **FiraCode Nerd Font Mono**.
 
-Install **Starship** with [[Homebrew]].
+Install **Starship** with [Homebrew](Homebrew.md).
 
 ```shell
 brew install starship
 ```
 
-Enable Starship in [[Zsh]] and [[Fish]].
+Enable Starship in [Zsh](Zsh.md) and [Fish](Fish.md).
 
 ```shell
 # ~/.zshrc
@@ -36,7 +36,7 @@ end
 
 ## Configure
 
-Get `~/.config/starship.toml` from [[Dotfiles]].
+Get `~/.config/starship.toml` from [Dotfiles](Dotfiles.md).
 
 ```shell
 wget -P ~/.config https://raw.githubusercontent.com/lukejanicke/dotfiles/master/.config/starship.toml

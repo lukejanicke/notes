@@ -5,7 +5,7 @@
 [IINA](https://iina.io) is essentially a native macOS wrapper for **mpv**.
 ## Install
 
-Install **mpv** with [[Homebrew]].
+Install **mpv** with [Homebrew](Homebrew.md).
 
 ```shell
 brew install mpv

@@ -18,7 +18,7 @@ defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock
 
 ## Rosetta
 
-Install [Rosetta 2](https://support.apple.com/en-au/102527) when needed (e.g., for [[Docker]]).
+Install [Rosetta 2](https://support.apple.com/en-au/102527) when needed (e.g., for [Docker](Docker.md)).
 
 ```shell
 softwareupdate --install-rosetta

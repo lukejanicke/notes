@@ -4,7 +4,7 @@
 
 ## Install
 
-Install **1Password CLI** with [[Homebrew]].
+Install **1Password CLI** with [Homebrew](Homebrew.md).
 
 ```zsh
 brew install 1password-cli

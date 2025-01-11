@@ -4,9 +4,8 @@
 
 ## Install
 
-Install **`ffmpeg`** with [[Homebrew]].
+Install **`ffmpeg`** with [Homebrew](Homebrew.md).
 
 ```shell
 brew install ffmpeg
 ```
-

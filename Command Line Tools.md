@@ -1,6 +1,6 @@
 # Command Line Tools
 
-[[macOS]] will alert you when you enter a command in [[Terminal]] that requires **Command Line Tools**. You should cancel and install Command Line Tools manually first.
+[macOS](macOS.md) will alert you when you enter a command in [Terminal](Terminal.md) that requires **Command Line Tools**. You should cancel and install Command Line Tools manually first.
 
 Install **Command Line Tools** manually with `xcode-select`.
 

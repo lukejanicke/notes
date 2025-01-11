@@ -9,9 +9,9 @@
 
 ## Install
 
-Install [[ripgrep]] and [[fd]] with [[Homebrew]].
+Install [ripgrep](ripgrep.md) and [fd](fd.md) with [Homebrew](Homebrew.md).
 
-Install [**Neovim**](https://neovim.io) with [[Homebrew]].
+Install [**Neovim**](https://neovim.io) with [Homebrew](Homebrew.md).
 
 ```zsh
 brew install neovim
@@ -37,4 +37,3 @@ Source `init.lua` in **Neovim**.
 ```vim
 :source %
 ```
-

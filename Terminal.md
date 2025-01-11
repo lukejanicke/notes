@@ -1,12 +1,12 @@
 # Terminal
 
-- [ ] Move shortcuts and commands to [[Terminal Commands and Shortcuts]].
+- [ ] Move shortcuts and commands to [Terminal Commands and Shortcuts](Terminal%20Commands%20and%20Shortcuts.md).
 
 - [Terminal User Guide](https://support.apple.com/en-au/guide/terminal/welcome/mac) / [Keyboard shortcuts](https://support.apple.com/en-au/guide/terminal/trmlshtcts/mac)
 - [Catppuccin (GitHub)](https://github.com/catppuccin/Terminal.app)
 
-> [!note] [[Fish]] sets **Terminal** window and tab bar titles
-> [[Fish]] sets **Terminal** window and tab bar titles to an abbreviated current working directory, and prepends the shell name if the default shell is left. For example, `zsh ~/D/Python` for `zsh ~/Documents/Python`. Changing directory when not in [[Fish]] shell will not update window and tab bars. I would prefer that **Terminal** settings take precedence. This is a [[Fish]] problem.
+> [!note] [Fish](Fish.md) sets **Terminal** window and tab bar titles
+> [Fish](Fish.md) sets **Terminal** window and tab bar titles to an abbreviated current working directory, and prepends the shell name if the default shell is left. For example, `zsh ~/D/Python` for `zsh ~/Documents/Python`. Changing directory when not in [Fish](Fish.md) shell will not update window and tab bars. I would prefer that **Terminal** settings take precedence. This is a [Fish](Fish.md) problem.
 
 ## Shortcuts
 

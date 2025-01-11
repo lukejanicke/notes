@@ -4,7 +4,7 @@
 
 ## Install
 
-Install **thefuck** with [[Homebrew]].
+Install **thefuck** with [Homebrew](Homebrew.md).
 
 ```shell
 brew install thefuck

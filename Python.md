@@ -14,13 +14,13 @@
 
 ## Install
 
-Install **pyenv** with [[Homebrew]].
+Install **pyenv** with [Homebrew](Homebrew.md).
 
 ```zsh
 brew install pyenv
 ```
 
-Configure **pyenv** in [[Zsh]] and [[Fish]].
+Configure **pyenv** in [Zsh](Zsh.md) and [Fish](Fish.md).
 
 ```zsh
 # ~/.zshrc
@@ -36,13 +36,10 @@ eval "$(pyenv init -)"
 
 if status is-interactive
 
-    # Python
-    set -x PYENV_ROOT $HOME/.pyenv
-    test -d $PYENV_ROOT/bin; and set -x PATH $PYENV_ROOT/bin $PATH
-    pyenv init | source
-
-    # Ensure pyenv shims are in the PATH for pip and pip3
-    set -x PATH $PYENV_ROOT/shims $PATH
+    # pyenv
+    set -gx PYENV_ROOT $HOME/.pyenv
+    fish_add_path $PYENV_ROOT/bin
+    pyenv init - fish | source
 
 end
 ```
@@ -54,9 +51,9 @@ pyenv install --list
 ```
 
 > [!note] 
-> It is currently necessary to install `xz` (via [[Homebrew]]) so that `pyenv` can install `lzma`.
+> It is currently necessary to install `xz` (via [Homebrew](Homebrew.md)) so that `pyenv` can install `lzma`.
 
-Install `xz` if it has not already been installed as a dependency for another package (e.g., [[FFmpeg]]).
+Install `xz` if it has not already been installed as a dependency for another package (e.g., [FFmpeg](FFmpeg.md)).
 
 ```shell
 brew install xz

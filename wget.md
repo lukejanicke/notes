@@ -2,7 +2,7 @@
 
 ## Install
 
-Install **wget** with [[Homebrew]].
+Install **wget** with [Homebrew](Homebrew.md).
 
 ```shell
 brew install wget

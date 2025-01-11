@@ -1,4 +1,4 @@
-- [ ] Move commands to [[Terminal Commands and Shortcuts]].
+- [ ] Move commands to [Terminal Commands and Shortcuts](Terminal%20Commands%20and%20Shortcuts.md).
 # Git
 
 - [Git](https://git-scm.com)
@@ -36,7 +36,7 @@
 
 ## Install
 
-Install **Git** with [[Homebrew]].
+Install **Git** with [Homebrew](Homebrew.md).
 
 ```zsh
 brew install git

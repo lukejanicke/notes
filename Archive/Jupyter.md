@@ -10,14 +10,14 @@
 
 ## Install
 
-Install **IPython** and **`nbconvert`** with [[Python|Pip]].
+Install **IPython** and **`nbconvert`** with [Pip](../Python.md).
 
 ```zsh
 pip install ipython
 pip install nbconvert
 ```
 
-Install **`nbconvert`** (Requires [[Pandoc]]).
+Install **`nbconvert`** (Requires [Pandoc](Pandoc.md)).
 
 ```zsh
 pip install nbconvert
@@ -32,6 +32,6 @@ python -m ipykernel install --user
 
 ## Visual Studio Code
 
-Install the **Jupyter** extension for [[Visual Studio Code]].
+Install the **Jupyter** extension for [Visual Studio Code](../Visual%20Studio%20Code.md).
 
 Create a new Notebook with *Create: New Jupyter Notebook*. Select a Python environment with *Notebook: Select Notebook Kernel* or the *Select Kernel* option at the top of the notebook.

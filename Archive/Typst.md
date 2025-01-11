@@ -5,11 +5,11 @@
 
 
 > [!note] Typst and Tinymist Typst
-> The **Tinymist Typst** extension for [[Visual Studio Code]] bundles the **Typst** compiler.
+> The **Tinymist Typst** extension for [Visual Studio Code](../Visual%20Studio%20Code.md) bundles the **Typst** compiler.
 
 ## Install
 
-Install **Typst** with [Homebrew](Homebrew.md).
+Install **Typst** with [Homebrew](../Homebrew.md).
 
 ```zsh
 brew install typst
@@ -31,7 +31,7 @@ typst watch file.typ
 
 ## Visual Studio Code
 
-Install the **Tinymist Typst** extension for [[Visual Studio Code]].
+Install the **Tinymist Typst** extension for [Visual Studio Code](../Visual%20Studio%20Code.md).
 
 ### Tinymist Typst settings
 

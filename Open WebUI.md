@@ -40,7 +40,9 @@ source ~/open-webui/bin/activate.fish
 
 Update **Open WebUI** with [pip](Python.md).
 
-
+```shell
+pip install -U open-webui
+```
 ## Running
 
 Start a `screen` session.
@@ -79,7 +81,7 @@ screen -r openwebui
 
 ## Fish function and web app
 
-Create a web app named “Open WebUI” at address [http://localhost:8080](http://localhost:8080)
+Create a [Safari web app](https://support.apple.com/en-au/104996) named “Open WebUI” at address [http://localhost:8080](http://localhost:8080)
 
 Get `openwebui.fish` from [Dotfiles](Dotfiles.md) with [wget](wget.md) and restart [Fish](Fish.md).
 
@@ -118,5 +120,3 @@ Under **OpenAI API**, click the + symbol.
 For **API Base URL**, enter `https://openrouter.ai/api/v1`.
 
 Enter an API key from OpenRouter and click **Save**.
-
-## Ollama

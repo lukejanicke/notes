@@ -116,7 +116,7 @@ Patch  **Symbols Nerd Font Propo** (manually appending **Propo** to the patched 
 ```
 
 > [!bug] Symbol Nerd Font Propo
-> `--variable-width-glyphs` builds a **Propo** font but names it **Symbols Nerd Font**, which conflicts with the real **Symbols Nerd Font**. See [[#Symbols Nerd Font Propo]] for renaming the font using `fonttools`.
+> `--variable-width-glyphs` builds a **Propo** font but names it **Symbols Nerd Font**, which conflicts with the real **Symbols Nerd Font**. See [Symbols Nerd Font Propo](#symbols-nerd-font-propo) for renaming the font using `fonttools`.
 
 # Symbols Nerd Font Propo
 

@@ -4,7 +4,7 @@
 
 ## Install
 
-Install **eza** with [[Homebrew]].
+Install **eza** with [Homebrew](Homebrew.md).
 
 ```shell
 brew install eza
@@ -12,9 +12,9 @@ brew install eza
 
 ## Configure
 
-Install a [[Nerd Fonts|Nerd Font]].
+Install a [Nerd Font](Nerd%20Fonts.md).
 
-Configure **eza** in [[Zsh]] and [[Fish]].
+Configure **eza** in [Zsh](Zsh.md) and [Fish](Fish.md).
 
 ```shell
 # ~/.zshrc

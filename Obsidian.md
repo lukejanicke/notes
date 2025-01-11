@@ -24,9 +24,9 @@
 	- Show tab title bar **OFF**
 	- Show ribbon **OFF**
 	- Native menus **OFF**
-	- Install [[#CSS snippets]]
+	- Install [CSS snippets](#css-snippets)
 - Hotkeys
-	- Edit [[#Hotkeys]]
+	- Edit [Hotkeys](#hotkeys)
 - Core plugins
 	- Slash commands **ON**
 - Community plugins

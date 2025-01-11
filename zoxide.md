@@ -13,18 +13,18 @@
 | `z foo/`                                | `cd` into relative path                                 |
 | `z ..`                                  | `cd` one level up                                       |
 | `z -`                                   | `cd` into previous directory                            |
-| `zi foo`                                | `cd` with interactive selection (using [[fzf]])         |
+| `zi foo`                                | `cd` with interactive selection (using [fzf](fzf.md))         |
 | `z foo` <kbd>space</kbd> <kbd>tab</kbd> | show interactive completions                            |
 
 ## Install
 
-Install **zoxide** with [[Homebrew]].
+Install **zoxide** with [Homebrew](Homebrew.md).
 
 ```shell
 brew install zoxide
 ```
 
-Configure **zoxide** in [[Zsh]] and [[Fish]].
+Configure **zoxide** in [Zsh](Zsh.md) and [Fish](Fish.md).
 
 ```shell
 # ~/.zshrc

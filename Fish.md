@@ -7,7 +7,7 @@
 
 ## Install
 
-Install **Fish** with [[Homebrew]].
+Install **Fish** with [Homebrew](Homebrew.md).
 
 ```shell
 brew install fish
@@ -15,13 +15,13 @@ brew install fish
 
 ## Configure
 
-Get `~/.config/fish/config.fish` from [[Dotfiles]] with [[wget]].
+Get `~/.config/fish/config.fish` from [Dotfiles](Dotfiles.md) with [wget](wget.md).
 
 ```shell
 wget -P ~/.config/fish https://raw.githubusercontent.com/lukejanicke/dotfiles/master/.config/fish/config.fish
 ```
 
-Get **Catppuccin** theme files from [[Dotfiles]] with [[wget]].
+Get **Catppuccin** theme files from [Dotfiles](Dotfiles.md) with [wget](wget.md).
 
 ```shell
 wget -P ~/.config/fish/themes https://raw.githubusercontent.com/catppuccin/fish/main/themes/Catppuccin%20Latte.theme

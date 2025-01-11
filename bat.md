@@ -5,7 +5,7 @@
 
 ## Install
 
-Install **bat** with [[Homebrew]].
+Install **bat** with [Homebrew](Homebrew.md).
 
 ```shell
 brew install bat
@@ -13,7 +13,7 @@ brew install bat
 
 ## Configure
 
-Get `.config/bat/config` from [[Dotfiles]] with [[wget]].
+Get `.config/bat/config` from [Dotfiles](Dotfiles.md) with [wget](wget.md).
 
 ```shell
 wget -P .config/bat https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.config/bat/config
@@ -28,7 +28,7 @@ wget -P .config/bat https://raw.githubusercontent.com/lukejanicke/dotfiles/main/
 --theme="Catppuccin Mocha"
 ```
 
-Get Catppuccin theme files from [dotfiles](https://github.com/lukejanicke/dotfiles) with [[wget]].
+Get Catppuccin theme files from [dotfiles](https://github.com/lukejanicke/dotfiles) with [wget](wget.md).
 
 ```shell
 wget -P ~/.config/bat/themes https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.config/bat/themes/Catppuccin%20Latte.tmTheme
@@ -43,7 +43,7 @@ Rebuild the **bat** cache.
 bat cache --build
 ```
 
-Set **bat** theme based on macOS appearance in [[Zsh]] and [[Fish]].
+Set **bat** theme based on macOS appearance in [Zsh](Zsh.md) and [Fish](Fish.md).
 
 ```shell
 # ~/.zshrc

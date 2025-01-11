@@ -16,20 +16,20 @@
 | `cd **<tab>`   | Fuzzy completion for directories under the current directory. |
 
 > [!note] Fuzzy completion
-> [Fuzzy completion](https://junegunn.github.io/fzf/shell-integration/#fuzzy-completion-for-bash-and-zsh) is available for **Bash** and [[Zsh]], but not [[Fish]].
+> [Fuzzy completion](https://junegunn.github.io/fzf/shell-integration/#fuzzy-completion-for-bash-and-zsh) is available for **Bash** and [Zsh](Zsh.md), but not [Fish](Fish.md).
 
 ## Install
 
-Install **fzf** with [[Homebrew]].
+Install **fzf** with [Homebrew](Homebrew.md).
 
 ```shell
 brew install fzf
 ```
 
-Also install [[eza]], [[bat]], [[fd]], and [[zoxide]].
+Also install [eza](eza.md), [bat](bat.md), [fd](fd.md), and [zoxide](zoxide.md).
 ## Configure
 
-Configure **fzf** in [[Zsh]] and [[Fish]].
+Configure **fzf** in [Zsh](Zsh.md) and [Fish](Fish.md).
 
 ```shell
 # ~/.zshrc

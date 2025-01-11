@@ -4,32 +4,32 @@
 
 ## Packages
 
-- [x] [[1Password CLI]]
-- [x] [[bat]]
-- [x] [[eza]]
-- [x] [[fd]]
-- [x] [[FFmpeg]]
-- [x] [[Fish]]
-- [x] [[fzf]]
-- [x] [[Git]]
-- [ ] [[Go]]
-- [x] [[mpv]]
-- [ ] [[Neovim]]
-- [ ] ~~[[Pandoc]]~~
-- [x] pyenv (→ [[Python]])
-- [x] [[ripgrep]]
-- [x] [[Starship]]
-- [x] [[thefuck]]
-- [x] [[tldr]]
-- [ ] [[Typst]]
-- [x] [[wget]]
-- [x] xz (See [[Python]])
-- [x] [[yt-dlp]]
-- [x] [[zoxide]]
+- [x] [1Password CLI](1Password%20CLI.md)
+- [x] [bat](bat.md)
+- [x] [eza](eza.md)
+- [x] [fd](fd.md)
+- [x] [FFmpeg](FFmpeg.md)
+- [x] [Fish](Fish.md)
+- [x] [fzf](fzf.md)
+- [x] [Git](Git.md)
+- [ ] [Go](Go.md)
+- [x] [mpv](mpv.md)
+- [ ] [Neovim](Neovim.md)
+- [ ] ~~[Pandoc](Pandoc.md)~~
+- [x] pyenv (→ [Python](Python.md))
+- [x] [ripgrep](ripgrep.md)
+- [x] [Starship](Starship.md)
+- [x] [thefuck](thefuck.md)
+- [x] [tldr](tldr.md)
+- [ ] [Typst](Typst.md)
+- [x] [wget](wget.md)
+- [x] xz (See [Python](Python.md))
+- [x] [yt-dlp](yt-dlp.md)
+- [x] [zoxide](zoxide.md)
 
 ## Install
 
-First, install [[Command Line Tools]] manually.
+First, install [Command Line Tools](Command%20Line%20Tools.md) manually.
 
 Install **Homebrew** with the official install script.
 
@@ -37,13 +37,13 @@ Install **Homebrew** with the official install script.
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-For [[Zsh]], the following is needed in `~/.zprofile`.
+For [Zsh](Zsh.md), the following is needed in `~/.zprofile`.
 
 ```zsh
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-For [[Fish]], the following is needed in `~/.config/fish/config.fish`.
+For [Fish](Fish.md), the following is needed in `~/.config/fish/config.fish`.
 
 ```shell
 fish_add_path /opt/homebrew/bin /opt/homebrew/sbin

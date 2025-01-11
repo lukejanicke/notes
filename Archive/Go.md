@@ -4,7 +4,7 @@
 
 # Install
 
-Install **Go** with [[Homebrew]].
+Install **Go** with [Homebrew](../Homebrew.md).
 
 ```zsh
 brew install go

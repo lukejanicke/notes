@@ -1,6 +1,6 @@
 # tldr
 
-- [ ] Move commands to [[Terminal Commands and Shortcuts]].
+- [ ] Move commands to [Terminal Commands and Shortcuts](Terminal%20Commands%20and%20Shortcuts.md).
 
 - [tldr (GitHub)](https://github.com/tldr-pages/tldr)
 - [tlrc (GitHub)](https://github.com/tldr-pages/tlrc)

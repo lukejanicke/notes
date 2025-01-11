@@ -6,7 +6,7 @@
 
 Download and install **Ghostty** directly from the official website.
 
-Alternatively, install via [[Homebrew]].
+Alternatively, install via [Homebrew](Homebrew.md).
 
 ```shell
 brew install --cask ghostty
@@ -14,7 +14,7 @@ brew install --cask ghostty
 
 ## Configure
 
-Get `~/.config/ghostty/config` from [[Dotfiles]] with [[wget]].
+Get `~/.config/ghostty/config` from [Dotfiles](Dotfiles.md) with [wget](wget.md).
 
 ```shell
 wget -P ~/.config/ghostty https://raw.githubusercontent.com/lukejanicke/dotfiles/master/.config/ghostty/config

@@ -10,8 +10,8 @@
 
 ## Development
 
-- [x] [[Command Line Tools]]
-- [x] [[Homebrew]]
+- [x] [Command Line Tools](Command%20Line%20Tools.md)
+- [x] [Homebrew](Homebrew.md)
 - [ ] Swift Playgrounds
 - [ ] Test Flight
 - [ ] Xcode
@@ -24,17 +24,17 @@
 - [x] [ChatGPT](https://openai.com)
 - [x] [Claude](https://claude.ai/download)
 - [ ] [Discord](https://discord.com)
-- [x] [[Docker]]
+- [x] [Docker](Docker.md)
 - [ ] [GitHub Desktop](https://github.com/apps/desktop)
 - [x] [Ghostty](https://ghostty.org)
 - [ ] [IINA](https://iina.io)
 - [x] JetBrains [CLion](https://www.jetbrains.com/clion/)
 - [x] JetBrains [PyCharm](https://www.jetbrains.com/pycharm/)
 - [x] JetBrains [RustRover](https://www.jetbrains.com/rust/)
-- [x] MacTeX ([[LaTeX]])
-- [x] Microsoft [[Visual Studio Code]]
+- [x] MacTeX ([LaTeX](LaTeX.md))
+- [x] Microsoft [Visual Studio Code](Visual%20Studio%20Code.md)
 - [ ] [Mozilla Firefox](https://www.mozilla.org)
-- [x] [[Obsidian]]
+- [x] [Obsidian](Obsidian.md)
 - [ ] [Skim](https://skim-app.sourceforge.io)
 - [x] [Tencent Meeting](https://meeting.tencent.com)
 - [ ] [Zoom](https://www.zoom.com)

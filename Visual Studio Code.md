@@ -11,7 +11,7 @@ From the command palette, run *Shell Command: Install 'code' command in PATH*.
 
 ## Keyboard shortcuts
 
-See [[Visual Studio Code Keyboard Shortcuts for macOS.pdf|Visual Studio Code Keyboard Shortcuts for macOS]] for more.
+See [Visual Studio Code Keyboard Shortcuts for macOS](Visual%20Studio%20Code%20Keyboard%20Shortcuts%20for%20macOS.pdf) for more.
 
 | Shortcut                                                            | Description                                    |
 | ------------------------------------------------------------------- | ---------------------------------------------- |

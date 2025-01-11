@@ -4,7 +4,7 @@
 
 ## Configure
 
-Get `.zshrc`, `.zshenv` and `.zprofile` from [[Dotfiles]] with **curl**.
+Get `.zshrc`, `.zshenv` and `.zprofile` from [Dotfiles](Dotfiles.md) with **curl**.
 
 ```shell
 curl -o .zshrc https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.zshrc
@@ -12,7 +12,7 @@ curl -o .zshenv https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.zsh
 curl -o .zprofile https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.zprofile
 ```
 
-Make [[Zsh]] the system default shell.
+Make [Zsh](Zsh.md) the system default shell.
 
 ```shell
 sudo dscl . -create /Users/$(whoami) UserShell /bin/zsh
