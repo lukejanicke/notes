@@ -1,6 +1,6 @@
 # Open WebUI
 
-- [Open WebUI](https://openwebui.com) / [GitHub](https://github.com/open-webui/open-webui)
+- [Open WebUI](https://openwebui.com) / [Documentation](https://docs.openwebui.com) / [GitHub](https://github.com/open-webui/open-webui)
 - [http://localhost:8080](http://localhost:8080)
 
 ## Setup
