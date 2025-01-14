@@ -1,8 +1,5 @@
 # macOS
 
-> [!bug] Preview
-> There seems to be a bug in Sequoia with Preview and Continuous Scroll and Zoom to Fit.
-
 ## Launchpad
 
 

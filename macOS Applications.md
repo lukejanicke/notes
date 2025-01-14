@@ -22,7 +22,7 @@
 - [x] [1Password](https://1password.com)
 - [ ] [Blender](https://www.blender.org)
 - [x] [ChatGPT](https://openai.com)
-- [x] [Claude](https://claude.ai/download)
+- [ ] [Claude](https://claude.ai/download)
 - [ ] [Discord](https://discord.com)
 - [x] [Docker](Docker.md)
 - [ ] [GitHub Desktop](https://github.com/apps/desktop)

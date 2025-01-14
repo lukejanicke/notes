@@ -64,6 +64,7 @@ rm *.aux *.bbl *.blg *.fdb_latexmk *.fls *.log *.out *.toc
 Install the **LaTeX Workshop** extension for Visual Studio Code.
 
 The default settings are sufficient to get started.
+
 ## Docker
 
 Pull the unofficial official TeX Live Docker image.

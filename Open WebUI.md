@@ -5,23 +5,23 @@
 
 ## Setup
 
-Use `pyenv`to install a version of [Python](Python.md) that is compatible with **Open WebUI**.
+Use `pyenv` to install a version of [Python](Python.md) that is compatible with **Open WebUI**.
 
 ```shell
 pyenv install 3.11.11
 pyenv global 3.11.11
 ```
 
-Create a [Python](Python.md) virtual environment at `~/open-webui` with `venv`.
+Create a [Python](Python.md) virtual environment at `~/.openwebui` with `venv`.
 
 ```shell
-python -m venv ~/open-webui
+python -m venv ~/.openwebui
 ```
 
 Activate the virtual environment.
 
 ```shell
-source ~/open-webui/bin/activate.fish
+source ~/.openwebui/bin/activate.fish
 ```
 
 Install **Open WebUI** with [pip](Python.md).
@@ -35,7 +35,7 @@ pip install open-webui
 Activate the virtual environment.
 
 ```shell
-source ~/open-webui/bin/activate.fish
+source ~/.openwebui/bin/activate.fish
 ```
 
 Update **Open WebUI** with [pip](Python.md).
@@ -43,6 +43,7 @@ Update **Open WebUI** with [pip](Python.md).
 ```shell
 pip install -U open-webui
 ```
+
 ## Running
 
 Start a `screen` session.
@@ -54,7 +55,7 @@ screen -S openwebui
 Activate the virtual environment (for the screen session).
 
 ```shell
-source ~/open-webui/bin/activate.fish
+source ~/.openwebui/bin/activate.fish
 ```
 
 Start the **Open WebUI** server.
@@ -120,3 +121,33 @@ Under **OpenAI API**, click the + symbol.
 For **API Base URL**, enter `https://openrouter.ai/api/v1`.
 
 Enter an API key from OpenRouter and click **Save**.
+
+## Deploy on AWS
+
+Launch an Amazon Linux EC2 instance with >=16GB  and connect via SSH.
+
+Install [uv](uv.md) using the standalone installer.
+
+```shell
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+Create a virtual environment with Python 3.11.
+
+```shell
+uv venv openwebui --python 3.11
+```
+
+Activate the virtual environment.
+
+```shell
+source openwebui/bin/activate
+```
+
+Install **Open WebUI**.
+
+```shell
+uv pip install open-webui
+```
+
+> [!ERROR] Attempts to start the server appear to have failed.
