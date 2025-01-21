@@ -13,22 +13,23 @@ Install **Fish** with [Homebrew](Homebrew.md).
 brew install fish
 ```
 
-## Configure
+---
+*DO IT THIS WAY FROM NOW ON*
 
-Get `~/.config/fish/config.fish` from [Dotfiles](Dotfiles.md) with [wget](wget.md).
-
-```shell
-wget -P ~/.config/fish https://raw.githubusercontent.com/lukejanicke/dotfiles/master/.config/fish/config.fish
-```
-
-Get **Catppuccin** theme files from [Dotfiles](Dotfiles.md) with [wget](wget.md).
+Add `/opt/homebrew/bin/fish` to `/etc/shells`.
 
 ```shell
-wget -P ~/.config/fish/themes https://raw.githubusercontent.com/catppuccin/fish/main/themes/Catppuccin%20Latte.theme
-wget -P ~/.config/fish/themes https://raw.githubusercontent.com/catppuccin/fish/main/themes/Catppuccin%20Frappe.theme
-wget -P ~/.config/fish/themes https://raw.githubusercontent.com/catppuccin/fish/main/themes/Catppuccin%20Macchiato.theme
-wget -P ~/.config/fish/themes https://raw.githubusercontent.com/catppuccin/fish/main/themes/Catppuccin%20Mocha.theme
+echo /opt/homebrew/bin/fish >> /etc/shells
 ```
+
+Make **Fish** the system default shell.
+
+```shell
+chsh -s /opt/homebrew/bin/fish
+```
+
+---
+*I DO NOT KNOW WHY I DIT IT THIS WAY BEFORE*
 
 Make **Fish** the system default shell.
 
@@ -40,4 +41,28 @@ Confirm which shell is the system default.
 
 ```shell
 dscl . -read /Users/$(whoami) UserShell
+```
+
+---
+## Configure
+
+Get `~/.config/fish/config.fish` from [Dotfiles](Dotfiles.md) with [wget](wget.md).
+
+```shell
+wget -P ~/.config/fish https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.config/fish/config.fish
+```
+
+Get **Catppuccin** theme files for **Fish** from [Dotfiles](Dotfiles.md) with [wget](wget.md).
+
+```shell
+wget -P ~/.config/fish/themes https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.config/fish/themes/Catppuccin%20Frappe.theme
+wget -P ~/.config/fish/themes https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.config/fish/themes/Catppuccin%20Latte.theme
+wget -P ~/.config/fish/themes https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.config/fish/themes/Catppuccin%20Macchiato.theme
+wget -P ~/.config/fish/themes https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.config/fish/themes/Catppuccin%20Mocha.theme
+```
+
+Get [Homebrew](Homebrew.md) configuration for **Fish** from [Dotfiles](Dotfiles.md) with [wget](wget.md).
+
+```shell
+wget -P ~/.config/fish/conf.d https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.config/fish/conf.d/homebrew.fish
 ```

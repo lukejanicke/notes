@@ -16,16 +16,7 @@ brew install bat
 Get `.config/bat/config` from [Dotfiles](Dotfiles.md) with [wget](wget.md).
 
 ```shell
-wget -P .config/bat https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.config/bat/config
-```
-
-```
-# ~/.config/bat/config
-
---theme="Catppuccin Latte"
---theme="Catppuccin Frappe"
---theme="Catppuccin Macchiato"
---theme="Catppuccin Mocha"
+wget -P ~/.config/bat https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.config/bat/config
 ```
 
 Get Catppuccin theme files from [dotfiles](https://github.com/lukejanicke/dotfiles) with [wget](wget.md).
@@ -43,38 +34,13 @@ Rebuild the **bat** cache.
 bat cache --build
 ```
 
-Set **bat** theme based on macOS appearance in [Zsh](Zsh.md) and [Fish](Fish.md).
+Get [Zsh](Zsh.md) and [Fish](Fish.md) configurations for **bat** from [Dotfiles](Dotfiles.md) with [wget](wget.md).
 
 ```shell
-# ~/.zshrc
-
-# Set bat theme based on macOS appearance
-set_bat_theme() {
-  if defaults read -g AppleInterfaceStyle 2>/dev/null | grep -q "Dark"; then
-    export BAT_THEME="Catppuccin Mocha"
-  else
-    export BAT_THEME="Catppuccin Latte"
-  fi
-}
-set_bat_theme
+wget -P ~/.config/zsh/zshrc https://raw.githubusercontent.com/lukejanicke/dotfiles/master/.config/zsh/zshrc/bat.zsh
 ```
 
 ```shell
-# ~/.config/fish/config.fish
-
-if status is-interactive
-
-    # Set themes based on macOS appearance
-    function set_themes
-        if defaults read -g AppleInterfaceStyle 2>/dev/null | grep -q "Dark"
-            set -gx BAT_THEME "Catppuccin Mocha"
-            fish_config theme choose "Catppuccin Mocha"
-        else
-            set -gx BAT_THEME "Catppuccin Latte"
-            fish_config theme choose "Catppuccin Latte"
-        end
-    end
-    set_themes
-
-end
+wget -P ~/.config/fish/conf.d https://raw.githubusercontent.com/lukejanicke/dotfiles/master/.config/fish/conf.d/bat.fish
+wget -P ~/.config/fish/functions https://raw.githubusercontent.com/lukejanicke/dotfiles/master/.config/fish/functions/bat.fish
 ```

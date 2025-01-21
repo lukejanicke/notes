@@ -1,96 +1,8 @@
 # Open WebUI
 
+- [ ] Finish the [Deploy on AWS](#Deploy%20on%20AWS) section.
+
 - [Open WebUI](https://openwebui.com) / [Documentation](https://docs.openwebui.com) / [GitHub](https://github.com/open-webui/open-webui)
-- [http://localhost:8080](http://localhost:8080)
-
-## Setup
-
-Use `pyenv` to install a version of [Python](Python.md) that is compatible with **Open WebUI**.
-
-```shell
-pyenv install 3.11.11
-pyenv global 3.11.11
-```
-
-Create a [Python](Python.md) virtual environment at `~/.openwebui` with `venv`.
-
-```shell
-python -m venv ~/.openwebui
-```
-
-Activate the virtual environment.
-
-```shell
-source ~/.openwebui/bin/activate.fish
-```
-
-Install **Open WebUI** with [pip](Python.md).
-
-```shell
-pip install open-webui
-```
-
-## Updating
-
-Activate the virtual environment.
-
-```shell
-source ~/.openwebui/bin/activate.fish
-```
-
-Update **Open WebUI** with [pip](Python.md).
-
-```shell
-pip install -U open-webui
-```
-
-## Running
-
-Start a `screen` session.
-
-```shell
-screen -S openwebui
-```
-
-Activate the virtual environment (for the screen session).
-
-```shell
-source ~/.openwebui/bin/activate.fish
-```
-
-Start the **Open WebUI** server.
-
-```shell
-open-webui serve
-```
-
-Detach the session by pressing <kbd>control</kbd> <kbd>A</kbd> then <kbd>D</kbd>.
-
-Access **Open WebUI** at [http://localhost:8080](http://localhost:8080).
-
-Stop the server by killing the session.
-
-```shell
-screen -S openwebui -X quit
-```
-
-Alternatively, reattach the session and press <kbd>control</kbd> <kbd>C</kbd>.
-
-```shell
-screen -r openwebui
-```
-
-## Fish function and web app
-
-Create a [Safari web app](https://support.apple.com/en-au/104996) named “Open WebUI” at address [http://localhost:8080](http://localhost:8080)
-
-Get `openwebui.fish` from [Dotfiles](Dotfiles.md) with [wget](wget.md) and restart [Fish](Fish.md).
-
-```shell
-wget -P ~/.config/fish/functions https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.config/fish/functions/openwebui.fish
-```
-
-Start **Open WebUI** with `openwebui`.
 
 ## Anthropic
 
@@ -100,15 +12,13 @@ Log in to [openwebui.com](https://openwebui.com) and go to *Functions*.
 
 Find the **Anthropic** function and click **Get**.
 
-If necessary, add the localhost URL `http://localhost:8080`.
+Add the URL `https://ai.lukejanicke.com` and click **Import to Open WebUI**.
 
-Click **Import to Open WebUI**.
-
-When it opens on localhost, click **Save** and close the function.
+When it opens, click **Save** and close the function.
 
 Find Anthropic in the functions list and click *Valves* (the gear icon).
 
-Paste an Anthropic API key, click **Save** and close.
+Paste an Anthropic API key, click **Save** and close and **Enable** the function.
 
 ## OpenRouter
 
@@ -135,13 +45,13 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 Create a virtual environment with Python 3.11.
 
 ```shell
-uv venv openwebui --python 3.11
+uv venv --python 3.11
 ```
 
 Activate the virtual environment.
 
 ```shell
-source openwebui/bin/activate
+source .venv/bin/activate
 ```
 
 Install **Open WebUI**.
@@ -150,4 +60,124 @@ Install **Open WebUI**.
 uv pip install open-webui
 ```
 
-> [!ERROR] Attempts to start the server appear to have failed.
+Create a service file.
+
+```
+sudo vi /etc/systemd/system/open-webui.service
+```
+
+```
+# /etc/systemd/system/open-webui.service
+
+[Unit]
+Description=Open WebUI Service
+After=network.target
+
+[Service]
+User=ec2-user
+WorkingDirectory=/home/ec2-user
+ExecStart=/bin/bash -c "source /home/ec2-user/.venv/bin/activate && open-webui serve --host 0.0.0.0 --port 8080"
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Enable and start the service.
+
+```shell
+sudo systemctl daemon-reload
+sudo systemctl enable open-webui
+sudo systemctl start open-webui
+```
+
+Check the service status.
+
+```
+sudo systemctl status open-webui
+```
+
+---
+
+Create a DNS record to point `ai.lukejanicke.com` to the EC2 instance public IP.
+
+```shell
+aws route53 change-resource-record-sets \
+  --hosted-zone-id Z30HSL8BI5BDS1 \
+  --change-batch '{
+      "Changes": [
+          {
+              "Action": "UPSERT",
+              "ResourceRecordSet": {
+                  "Name": "ai.lukejanicke.com",
+                  "Type": "A",
+                  "TTL": 300,
+                  "ResourceRecords": [
+                      {
+                          "Value": "47.128.237.35"
+                      }
+                  ]
+              }
+          }
+      ]
+  }'
+```
+
+Request a certificate.
+
+```shell
+aws acm request-certificate \
+  --domain-name "*.lukejanicke.com" \
+  --validation-method DNS \
+  --subject-alternative-names "lukejanicke.com" \
+  --query "CertificateArn" \
+  --output text
+```
+
+Get DNS validation information.
+
+```shell
+aws acm describe-certificate \
+  --certificate-arn arn:aws:acm:ap-southeast-1:024171276396:certificate/7f098eb9-ae62-44bb-9a58-6c7eac32ce30 \
+  --query "Certificate.DomainValidationOptions" \
+  --output json
+```
+
+Add the required CNAME record for validation.
+
+```shell
+aws route53 change-resource-record-sets \
+  --hosted-zone-id Z30HSL8BI5BDS1 \
+  --change-batch '{
+      "Changes": [
+          {
+              "Action": "UPSERT",
+              "ResourceRecordSet": {
+                  "Name": "_a9134b52c00e787334aa207753c4c3a9.lukejanicke.com.",
+                  "Type": "CNAME",
+                  "TTL": 300,
+                  "ResourceRecords": [
+                      {
+                          "Value": "_068f4f02603ef4e3f753efdba4833990.ltfvzjuylp.acm-validations.aws."
+                      }
+                  ]
+              }
+          }
+      ]
+  }'
+```
+
+Wait for validation.
+
+```shell
+aws acm describe-certificate \
+  --certificate-arn arn:aws:acm:ap-southeast-1:024171276396:certificate/7f098eb9-ae62-44bb-9a58-6c7eac32ce30 \
+  --query "Certificate.Status" \
+  --output text
+```
+
+Create a group.
+
+```shell
+...
+```

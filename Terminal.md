@@ -1,12 +1,9 @@
 # Terminal
 
-- [ ] Move shortcuts and commands to [Terminal Commands and Shortcuts](Terminal%20Commands%20and%20Shortcuts.md).
+- [ ] Review and tidy/improve [Shortcuts](#Shortcuts) and [Commands](#Commands).
 
 - [Terminal User Guide](https://support.apple.com/en-au/guide/terminal/welcome/mac) / [Keyboard shortcuts](https://support.apple.com/en-au/guide/terminal/trmlshtcts/mac)
 - [Catppuccin (GitHub)](https://github.com/catppuccin/Terminal.app)
-
-> [!note] [Fish](Fish.md) sets **Terminal** window and tab bar titles
-> [Fish](Fish.md) sets **Terminal** window and tab bar titles to an abbreviated current working directory, and prepends the shell name if the default shell is left. For example, `zsh ~/D/Python` for `zsh ~/Documents/Python`. Changing directory when not in [Fish](Fish.md) shell will not update window and tab bars. I would prefer that **Terminal** settings take precedence. This is a [Fish](Fish.md) problem.
 
 ## Shortcuts
 
@@ -62,16 +59,18 @@ touch .hushlogin
 
 From the **View**, select **Hide Marks**.
 
+In general settings, choose *Shells open with:* **Command (complete path):** `/bin/zsh`.
+
 Import modified **Catppuccin** profiles and set **Catppuccin Mocha M** default.
 
-The modified profiles set **IosevkaFixed Nerd Font Mono**.
+The modified profiles set **IosevkaCustomFixed Nerd Font Mono**.
 
 Remove default profiles.
 
 For new profiles, change the following settings.
 
 - Text
-	- Font: **IosevkaFixed Nerd Font Mono 13** or any preferred alternative
+	- Font: **IosevkaCustomFixed Nerd Font Mono 13** or any preferred alternative
 - Window
 	- Title: **Terminal**
 	- Select **Working directory or arguments**, **Path**

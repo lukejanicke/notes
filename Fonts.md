@@ -1,8 +1,10 @@
 # Fonts
 
 - [Inter](https://rsms.me/inter/)
-- Iosevka (see [Iosevka](Iosevka.md))
-- Nerd Fonts (see [Nerd Fonts](Nerd%20Fonts.md))
+- [Iosevka](Iosevka.md)
+- [Nerd Fonts](Nerd%20Fonts.md)
+
+## Inter
 
 - [x] Inter
 - [x] Inter Display

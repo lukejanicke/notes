@@ -12,30 +12,14 @@ brew install eza
 
 ## Configure
 
-Install a [Nerd Font](Nerd%20Fonts.md).
+**eza** requires a [Nerd Font](Nerd%20Fonts.md).
 
-Configure **eza** in [Zsh](Zsh.md) and [Fish](Fish.md).
+Get [Zsh](Zsh.md) and [Fish](Fish.md) configurations for **eza** from [Dotfiles](Dotfiles.md) with [wget](wget.md).
 
 ```shell
-# ~/.zshrc
-
-# eza
-alias ls='eza --color=always --icons=always'
-alias tree='eza --tree --color=always --icons=always'
+wget -P ~/.config/zsh/zshrc https://raw.githubusercontent.com/lukejanicke/dotfiles/master/.config/zsh/zshrc/eza.zsh
 ```
 
 ```shell
-# ~/.config/fish/config.fish
-
-if status is-interactive
-
-    # eza
-    function ls
-        eza --color=always --icons=always $argv
-    end
-    function tree
-        eza --tree --color=always --icons=always $argv
-    end
-
-end
+wget -P ~/.config/fish/conf.d https://raw.githubusercontent.com/lukejanicke/dotfiles/master/.config/fish/conf.d/eza.fish
 ```

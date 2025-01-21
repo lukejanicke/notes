@@ -1,17 +1,7 @@
 # tldr
 
-- [ ] Move commands to [Terminal Commands and Shortcuts](Terminal%20Commands%20and%20Shortcuts.md).
-
 - [tldr (GitHub)](https://github.com/tldr-pages/tldr)
 - [tlrc (GitHub)](https://github.com/tldr-pages/tlrc)
-
-## Install
-
-Install the official **tldr** Rust client with [Homebrew](Homebrew.md).
-
-```shell
-brew install tlrc
-```
 
 ## Commands
 
@@ -22,4 +12,11 @@ brew install tlrc
 | `tldr --update`                         | Update the local cache of tldr pages.               |
 | `tldr --list`                           | List all pages for the current platform and common. |
 | `tldr --list \| grep command \| column` | List all available subcommand pages for a command.  |
-| `tldr --update`                         | Update the local cache of tldr pages.               |
+
+## Install
+
+Install the official **tldr** Rust client with [Homebrew](Homebrew.md).
+
+```shell
+brew install tlrc
+```

@@ -3,100 +3,13 @@
 - [Visual Studio Code](https://code.visualstudio.com)
 - [Visual Studio Code Keyboard Shortcuts for macOS (PDF)](Visual Studio Code Keyboard Shortcuts for macOS.pdf)
 
-Note, **GitHub Copilot** and **Microsoft IntelliCode** work together.
+Log in with GitHub to sync settings and keybindings.
 
-## CLI
+`settings.json` and `keybindings.json` can also be downloaded from [Dotfiles](Dotfiles.md).
+
+```shell
+wget -P /Library/Application Support/Code/User https://raw.githubusercontent.com/lukejanicke/dotfiles/main/Library/Application Support/Code/User/settings.json
+wget -P /Library/Application Support/Code/User https://raw.githubusercontent.com/lukejanicke/dotfiles/main/Library/Application Support/Code/User/keybindings.json
+```
 
 From the command palette, run *Shell Command: Install 'code' command in PATH*.
-
-## Keyboard shortcuts
-
-See [Visual Studio Code Keyboard Shortcuts for macOS](Visual%20Studio%20Code%20Keyboard%20Shortcuts%20for%20macOS.pdf) for more.
-
-| Shortcut                                                            | Description                                    |
-| ------------------------------------------------------------------- | ---------------------------------------------- |
-| <kbd>command</kbd> <kbd>command</kbd> <kbd>P</kbd> or <kbd>F1</kbd> | Command palette…                               |
-| <kbd>command</kbd> <kbd>K</kbd> <kbd>S</kbd>                        | Keyboard shortcuts                             |
-| <kbd>command</kbd> <kbd>P</kbd>                                     | Quick open, go to file…                        |
-| <kbd>shift</kbd> <kbd>command</kbd> <kbd>V</kbd>                    | Open markdown preview                          |
-| <kbd>command</kbd> <kbd>K</kbd> <kbd>V</kbd>                        | Open markdown preview to the side              |
-| <kbd>command</kbd> <kbd>K</kbd> <kbd>Z</kbd>                        | Zen mode                                       |
-| <kbd>command</kbd> <kbd>K</kbd> <kbd>T</kbd>                        | Color theme                                    |
-| <kbd>command</kbd> <kbd>B</kbd>                                     | Show side bar                                  |
-| <kbd>command</kbd> <kbd>J</kbd>                                     | Show panel                                     |
-| <kbd>shift</kbd> <kbd>command</kbd> <kbd>L</kbd>                    | Select all occurrences of selection/find match |
-
-> [!warning] Command Palette
-> **TickTick** sets <kbd>command</kbd> <kbd>shift</kbd> <kbd>P</kbd> to a global action hotkey. Just delete all global action hotkeys for **TickTick**.
-
-### GitHub Copilot
-
-| Command                         | Action                      |
-|---------------------------------|-----------------------------|
-| `Tab` or `Enter`                | Accept suggestion           |
-| `⌘ + I`                         | Trigger suggestion manually |
-| `⌥ + ]`                         | Next suggestion             |
-| `⌥ + [`                         | Previous suggestion         |
-| `Esc`                           | Dismiss suggestion          |
-
-### Microsoft IntelliSense
-
-| Command                         | Action                            |
-|---------------------------------|-----------------------------------|
-| `⌃ + Space`                     | Trigger suggestions              |
-| `Tab` or `Enter`                | Accept suggestion                |
-| `⌘ + ⇧ + Space`                 | Trigger parameter info           |
-| `⌃ + K, ⌃ + I`                  | Quick info (hover)               |
-| `⌃ + Space`                     | Show member list                 |
-| `F12` or `⌘ + Click`            | Go to definition                 |
-
-## Settings
-
-Log in with GitHub to sync settings.
-
-```json
-{
-    "breadcrumbs.enabled": false,
-    "editor.fontFamily": "\"FiraCode Nerd Font\", monospace",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 13,
-    "editor.lineNumbers": "off",
-    "editor.minimap.enabled": false,
-    "editor.wordWrap": "on",
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "jupyter.themeMatplotlibPlots": true,
-    "latex-workshop.latex.recipe.default": "xelatex",
-    "latex-workshop.latex.recipes": [
-        {
-            "name": "xelatex",
-            "tools": [
-                "latexmk"
-            ]
-        }
-    ],
-    "latex-workshop.latex.tools": [
-        {
-            "args": [
-                "-xelatex",
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "-file-line-error",
-                "%DOC%"
-            ],
-            "command": "latexmk",
-            "name": "latexmk"
-        }
-    ],
-    "markdown.preview.breaks": true,
-    "markdown.preview.fontFamily": "\"Fira Sans\", sans-serif",
-    "terminal.integrated.fontSize": 13,
-    "window.autoDetectColorScheme": true,
-    "window.systemColorTheme": "auto",
-    "workbench.colorTheme": "Catppuccin Mocha",
-    "workbench.iconTheme": "catppuccin-latte",
-    "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
-    "workbench.preferredLightColorTheme": "Catppuccin Latte",
-    "workbench.startupEditor": "none"
-}
-```

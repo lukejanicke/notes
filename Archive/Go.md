@@ -19,6 +19,7 @@ go version
 Copy the following to `~/.zshenv`.
 
 ```zsh
+# Go
 export GOPATH="$HOME/go"
 export PATH="$PATH:/usr/local/go/bin:$GOPATH/bin"
 ```

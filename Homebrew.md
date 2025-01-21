@@ -5,25 +5,27 @@
 ## Packages
 
 - [x] [1Password CLI](1Password%20CLI.md)
+- [x] [AWS CLI](AWS%20CLI.md)
 - [x] [bat](bat.md)
 - [x] [eza](eza.md)
 - [x] [fd](fd.md)
 - [x] [FFmpeg](FFmpeg.md)
 - [x] [Fish](Fish.md)
+- [x] [fnm](fnm.md) (→ [Node](Node.md))
 - [x] [fzf](fzf.md)
 - [x] [Git](Git.md)
 - [ ] [Go](Go.md)
-- [x] [mpv](mpv.md)
+- [ ] [mpv](mpv.md)
 - [ ] [Neovim](Neovim.md)
-- [ ] ~~[Pandoc](Pandoc.md)~~
-- [x] pyenv (→ [Python](Python.md))
-- [x] [ripgrep](ripgrep.md)
+- [ ] [Pandoc](Pandoc.md)
+- [x] [pyenv](pyenv.md) (→ [Python](Python.md))
+- [ ] [ripgrep](ripgrep.md)
 - [x] [Starship](Starship.md)
 - [x] [thefuck](thefuck.md)
 - [x] [tldr](tldr.md)
 - [ ] [Typst](Typst.md)
+- [x] [uv](uv.md)
 - [x] [wget](wget.md)
-- [x] xz (See [Python](Python.md))
 - [x] [yt-dlp](yt-dlp.md)
 - [x] [zoxide](zoxide.md)
 
@@ -37,33 +39,10 @@ Install **Homebrew** with the official install script.
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-For [Zsh](Zsh.md), the following is needed in `~/.zprofile`.
-
-```zsh
-eval "$(/opt/homebrew/bin/brew shellenv)"
-```
-
-For [Fish](Fish.md), the following is needed in `~/.config/fish/config.fish`.
+Get [Zsh](Zsh.md) configuration for **Homebrew** from [Dotfiles](Dotfiles.md) with **curl**.
 
 ```shell
-fish_add_path /opt/homebrew/bin /opt/homebrew/sbin
-set -gx HOMEBREW_PREFIX /opt/homebrew
-set -gx HOMEBREW_CELLAR /opt/homebrew/Cellar
-set -gx HOMEBREW_REPOSITORY /opt/homebrew
-set -gx MANPATH /opt/homebrew/share/man $MANPATH
-set -gx INFOPATH /opt/homebrew/share/info $INFOPATH
+curl -o ~/.config/zsh/zprofile/homebrew.zsh https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.config/zsh/zprofile/homebrew.zsh
 ```
 
-## Uninstall
-
-Remove all packages and dependencies.
-
-```
-brew list | xargs brew uninstall --force
-```
-
-Uninstall Homebrew itself.
-
-```zsh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-```
+Get [Fish](Fish.md) configuration for **Homebrew** when installing [Fish](Fish.md).

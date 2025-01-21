@@ -2,41 +2,37 @@
 
 ## Keyboard shortcuts
 
-| Shortcut                                          | Description    |
-| ------------------------------------------------- | -------------- |
-| <kbd>Command</kbd> <kbd>1</kbd>                   | View as icons  |
-| <kbd>Command</kbd> <kbd>2</kbd>                   | View as list   |
-| <kbd>Command</kbd> <kbd>Option</kbd> <kbd>S</kbd> | Toggle sidebar |
-
-## Toggle hidden files and folders
-
-<kbd>Command</kbd> <kbd>Shift</kbd> <kbd>.</kbd>
-
-```shell
-defaults write com.apple.finder AppleShowAllFiles -bool TRUE && killall Finder
-defaults write com.apple.finder AppleShowAllFiles -bool FALSE && killall Finder
-```
+| Shortcut                                          | Description                     |
+| ------------------------------------------------- | ------------------------------- |
+| <kbd>command</kbd> <kbd>1</kbd>                   | View as icons                   |
+| <kbd>command</kbd> <kbd>2</kbd>                   | View as list                    |
+| <kbd>command</kbd> <kbd>3</kbd>                   | View as columns                 |
+| <kbd>command</kbd> <kbd>4</kbd>                   | View as gallery                 |
+| <kbd>command</kbd> <kbd>Option</kbd> <kbd>S</kbd> | Toggle sidebar                  |
+| <kbd>command</kbd> <kbd>Shift</kbd> <kbd>.</kbd>  | Toggle hidden files and folders |
+| <kbd>command</kbd> <kbd>option</kbd> <kbd>V</kbd> | Move instead of copy and paste  |
 
 ## Preferences
 
-Press <kbd>Command</kbd> <kbd>,</kbd> to open Preferences.
+Press <kbd>command</kbd> <kbd>,</kbd> to open Preferences.
 
 - General
-	- Show these items on the desktop **deselect all**
-	- New Finder windows show **Documents**
-	- Sync Desktop & Documents folders **ON**
-	- Open folders in tabs instead of new windows **ON**
-- Tags / Configure according to your needs and preferences. A convenient default set of tags are one for each colour available: Red, Orange, Yellow, Green, Blue, Purple, Grey.
+	- [x] Show these items on the desktop **deselect all**
+	- [x] New Finder windows show **Documents**
+	- [x] Sync Desktop & Documents folders **ON**
+	- [x] Open folders in tabs instead of new windows **ON**
+- Tags
+	- [x] *Configure according to your needs and preferences. A convenient default set of tags are one for each colour available: Red, Orange, Yellow, Green, Blue, Purple, Grey.*
 - Sidebar
-	- Favourites: **Recents**, **AirDrop**, **Applications**, **Downloads**, **Home (user)**
-	- iCloud: **select all**
-	- Locations: **select all**
-	- Tags: **Recent Tags**
+	- [x] Favourites: **Recents**, **AirDrop**, **Applications**, **Downloads**, **lukejanicke**
+	- [x] iCloud: *select all*
+	- [x] Locations: *select all*
+	- [x] Tags: **Recent tags**
 - Advanced
-	- Show all filename extensions **ON**
-	- Deselect all other options
-	- Keep folders on top: **In windows when sorting by name**
-	- When performing a search: **Search this Mac**
+	- [x] Show all filename extensions **ON**
+	- [x] *Deselect all other options*
+	- [x] Keep folders on top: **In windows when sorting by name**
+	- [x] When performing a search: **Search this Mac**
 
 ## Toolbar
 
@@ -44,12 +40,15 @@ Right click on the Toolbar and select **Customise Toolbar…**.
 
 - **Back/Forward** (to left of folder name)
 - **Search** (to right of folder name)
-- Show **Icon Only**
+- Show **Icon only**
 
 ## View
 
-- Show Sidebar
-- Hide Preview
+- Show sidebar
+- Hide preview
+- Show toolbar
+- Hide path bar
+- Hide status bar
 
 ## Sidebar
 
@@ -73,7 +72,7 @@ Collapse (hide) the tags group if you are not actively using them.
 
 ## View Options
 
-In `~/Documents`, right click and select **Show View Options**.
+From the **View** menu, select **Show view options** or press <kbd>command</kbd> <kbd>J</kbd>.
 
 - Always open in icon view **ON**
 - Browse in icon view **ON**
@@ -87,39 +86,39 @@ In `~/Documents`, right click and select **Show View Options**.
 - Show icon preview **ON**
 - Background **Default**
 
-Click **Use as Defaults**.
+Click **Use as defaults**.
 
-From the **File** menu, select **as List** or press <kbd>Command</kbd> <kbd>2</kbd>.
+From the **View** menu, select **as list** or press <kbd>command</kbd> <kbd>2</kbd>.
 
-- Icon size: **larger option**
+- Icon size: *select larger option*
 - Text size: **13**
-- Show columns: **Date Modified**, **Size**
+- Show columns: **Date modified**, **Size**
 - Use relative dates **ON**
 - Calculate all sizes **ON**
 - Show icon preview **ON**
 
-Click **Use as Defaults**.
+Click **Use as defaults**.
 
-From the **File** menu, select **as Columns** or press <kbd>Command</kbd> <kbd>3</kbd>.
+From the **File** menu, select **as columns** or press <kbd>command</kbd> <kbd>3</kbd>.
 
 - Show preview column **OFF**
 
-From the **File** menu, select **as Gallery** or press <kbd>Command</kbd> <kbd>4</kbd>.
+From the **File** menu, select **as gallery** or press <kbd>command</kbd> <kbd>4</kbd>.
 
-- Thumbnail size: **largest option**
+- Thumbnail size: *select largest option*
 - Show preview column **OFF**
 - Show icon preview **ON**
 - Show filename **OFF**
 
-Click **Use as Defaults**.
+Click **Use as defaults**.
 
-From the **File** menu, select **as Icons** or press <kbd>Command</kbd> <kbd>1</kbd>.
+From the **File** menu, select **as icons** or press <kbd>command</kbd> <kbd>1</kbd>.
 
-To give a a folder these default dettings, right click and select **Show View Options**. Hold Down <kbd>Option</kbd> and see that **Use as Defaults** changes to **Restore to Defaults**. Click **Restore to Defaults**.
+To give a a folder these default settings, press <kbd>command</kbd> <kbd>J</kbd> to **Show view options**. Hold Down <kbd>option</kbd> and see that **Use as defaults** changes to **Restore to defaults**. Click **Restore to defaults**.
 
-Go to Desktop, Downloads and Applications folders and apply these default settings.
+Go to **Desktop**, **Downloads** and **Applications** folders and apply these default settings.
 
 ## iCloud
 
-> [!tip] On My Mac
-> If you are using iCloud, make sure the **On My Mac** folder is empty. Avoid using it.
+> [!tip] On my Mac
+> If you are using iCloud, make sure the **On my Mac** folder is empty. Avoid using it.

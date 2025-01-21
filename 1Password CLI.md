@@ -16,7 +16,7 @@ Check installation.
 op --version
 ```
 
-In the **1Password** desktop app, in Settings / Developer, turn **ON** Integrate with 1Password CLI.
+Ensure <u>Integrate with 1Password CLI</u> is **ON** in [1Password](1Password.md) desktop app settings.
 
 Enter any command to sign in.
 
@@ -24,4 +24,3 @@ Enter any command to sign in.
 op vault list
 ```
 
-Also turn **ON** Use the SSH Agent.

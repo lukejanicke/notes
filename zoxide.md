@@ -13,7 +13,7 @@
 | `z foo/`                                | `cd` into relative path                                 |
 | `z ..`                                  | `cd` one level up                                       |
 | `z -`                                   | `cd` into previous directory                            |
-| `zi foo`                                | `cd` with interactive selection (using [fzf](fzf.md))         |
+| `zi foo`                                | `cd` with interactive selection (using [fzf](fzf.md))   |
 | `z foo` <kbd>space</kbd> <kbd>tab</kbd> | show interactive completions                            |
 
 ## Install
@@ -24,26 +24,12 @@ Install **zoxide** with [Homebrew](Homebrew.md).
 brew install zoxide
 ```
 
-Configure **zoxide** in [Zsh](Zsh.md) and [Fish](Fish.md).
+Get [Zsh](Zsh.md) and [Fish](Fish.md) configurations for **zoxide** from [Dotfiles](Dotfiles.md) with [wget](wget.md).
 
 ```shell
-# ~/.zshrc
-
-# zoxide
-eval "$(zoxide init zsh)"
-alias cd="z"
+wget -P ~/.config/zsh/zshrc https://raw.githubusercontent.com/lukejanicke/dotfiles/master/.config/zsh/zshrc/zoxide.zsh
 ```
 
 ```shell
-# ~/.config/fish/config.fish
-
-if status is-interactive
-
-    # zoxide
-    zoxide init fish | source
-    function cd
-        z $argv
-    end
-
-end
+wget -P ~/.config/fish/conf.d https://raw.githubusercontent.com/lukejanicke/dotfiles/master/.config/fish/conf.d/zoxide.fish
 ```

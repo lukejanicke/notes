@@ -4,7 +4,7 @@
 
 ## Install
 
-Install a [Nerd Font](https://www.nerdfonts.com) such as **FiraCode Nerd Font Mono**.
+Install a [Nerd Font](Nerd%20Fonts.md).
 
 Install **Starship** with [Homebrew](Homebrew.md).
 
@@ -12,32 +12,18 @@ Install **Starship** with [Homebrew](Homebrew.md).
 brew install starship
 ```
 
-Enable Starship in [Zsh](Zsh.md) and [Fish](Fish.md).
+Get `~/.config/starship/config.toml` from [Dotfiles](Dotfiles.md) with [wget](wget.md).
 
 ```shell
-# ~/.zshrc
-
-# Starship
-eval "$(starship init zsh)"
+wget -P ~/.config/starship https://raw.githubusercontent.com/lukejanicke/dotfiles/master/.config/starship/config.toml
 ```
 
+Get [Zsh](Zsh.md) and [Fish](Fish.md) configurations for **Starship** from [Dotfiles](Dotfiles.md) with [wget](wget.md).
 
 ```shell
-# ~/.config/fish/config.fish
-
-if status is-interactive
-
-    # Starship
-    # Should be preceded by Homebrew path configuration!
-    starship init fish | source
-
-end
+wget -P ~/.config/zsh/zshrc https://raw.githubusercontent.com/lukejanicke/dotfiles/master/.config/zsh/zshrc/starship.zsh
 ```
 
-## Configure
-
-Get `~/.config/starship.toml` from [Dotfiles](Dotfiles.md).
-
 ```shell
-wget -P ~/.config https://raw.githubusercontent.com/lukejanicke/dotfiles/master/.config/starship.toml
+wget -P ~/.config/fish/conf.d https://raw.githubusercontent.com/lukejanicke/dotfiles/master/.config/fish/conf.d/starship.fish
 ```

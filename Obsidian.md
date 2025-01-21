@@ -4,36 +4,58 @@
 
 - [ ] Write a CSS snippet to remove borders from panes in all Obsidian themes.
 - [ ] Add [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) configuration options to `readable-line-width.css` CSS snippet.
-- [ ] Write a CSS snippet to remove `line-through` from completed checklist items.
 
 > [!bug] Conflicting shortcuts
 > Obsidian confuses <kbd>fn</kbd> + <kbd>control</kbd> + <kbd>left</kbd> / <kbd>right</kbd> (the default [Mac window tiling shortcuts](https://support.apple.com/en-au/guide/mac-help/mchl9674d0b0/mac)) with <kbd>fn</kbd> + <kbd>left</kbd> / <kbd>right</kbd> (the [Windows keys on a Mac keyboard](https://support.apple.com/en-au/guide/mac-help/cpmh0152/mac) for <kbd>Home</kbd> / <kbd>End</kbd>). Forum post: [Obsidian confuses Mac window tiling shortcut for Windows Home/End shortcut](https://forum.obsidian.md/t/obsidian-confuses-mac-window-tiling-shortcut-for-windows-home-end-shortcut/91551).
 
 ## Settings
 
+*Leave default settings except for the following.*
+
 - General
-	- Notify if startup takes longer than expected **ON**
+	- [x] Notify if startup takes longer than expected **ON**
 - Editor
-	- Show indentation guides **OFF**
+	- [x] Show indentation guides **OFF**
 - Appearance
-	- Install **Catppuccin** theme
-	- Interface font *leave default*
-	- Text font **PT Sans** or any preferred alternative
-	- Monospace font **PT Mono** or any preferred alternative
-	- Show inline title **OFF**
-	- Show tab title bar **OFF**
-	- Show ribbon **OFF**
-	- Native menus **OFF**
-	- Install [CSS snippets](#css-snippets)
+	- [x] Install **Catppuccin** theme
+	- [x] Interface font **Inter**
+	- [x] Text font **Inter**, **SymbolsCustom Nerd Font**
+	- [x] Monospace font **Iosevka Custom**, **SymbolsCustom Nerd Font**
+	- [x] Show inline title **OFF**
+	- [x] Show tab title bar **OFF**
+	- [x] Show ribbon **OFF**
+	- [x] Native menus **OFF**
+	- [x] Install [CSS snippets](#css-snippets)
 - Hotkeys
-	- Edit [Hotkeys](#hotkeys)
+	- [x] Edit [Hotkeys](#hotkeys)
 - Core plugins
-	- Slash commands **ON**
+	- [x] Backlinks
+	- [x] Command palette
+	- [x] Files
+	- [x] Graph view
+	- [x] Note composer
+	- [x] Outgoing links
+	- [x] Outline
+	- [x] Page preview
+	- [x] Quick switcher
+	- [x] Search
+	- [x] Slash commands
+	- [x] Tags
 - Community plugins
-	- **Turn on community plugins**
-	- Install **Style Settings** and **Hider** plugins
-	- Manually install **Quick Wrapper**
-	- Create `<kbd>` quick tags with <kbd>command</kbd> <kbd>shift</kbd> <kbd>K</kbd> keyboard shortcut
+	- [x] Hider
+	- [x] Quick Wrapper (install manually)
+	- [x] Style Settings
+- Hider
+	- [x] Hide status bar **ON**
+	- [x] Hide scroll bars **ON**
+- Quick Wrapper
+	- [x] `<kbd>...</kbd>`
+	- [x] `<u>...</u>`
+- Style Settings
+	- Catppuccin: Catppuccin Accents
+		- [x] Dark theme flavour: **Mocha**
+	- Catppuccin: Catppuccin Accents
+		- [x] Bold folder title **ON**
 
 ## Hotkeys
 
@@ -43,6 +65,8 @@
 | <kbd>command</kbd> <kbd>/</kbd>                      | Toggle comment          | Toggle Live Preview/Source mode |
 | <kbd>alt</kbd> <kbd>B</kbd>                          |                         | Toggle left sidebar             |
 | <kbd>alt</kbd> <kbd>shift</kbd> <kbd>B</kbd>         |                         | Toggle right sidebar            |
+| <kbd>command</kbd> <kbd>shift</kbd> <kbd>K</kbd>     |                         | Quick Wrapper `<kbd>`           |
+| <kbd>command</kbd> <kbd>U</kbd>                      |                         | Quick Wrapper `<u>`             |
 
 ## CSS snippets
 

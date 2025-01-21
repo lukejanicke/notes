@@ -1,6 +1,6 @@
 # yt-dlp
 
-- [ ] Move commands to [Terminal Commands and Shortcuts](Terminal%20Commands%20and%20Shortcuts.md).
+- [ ] Move commands to [Terminal Commands and Shortcuts](Terminal%20Commands%20and%20Shortcuts.md). Or not?
 
 - [yt-dlp (GitHub)](https://github.com/yt-dlp/yt-dlp)
 
@@ -44,24 +44,12 @@ Install **yt-dlp** with [Homebrew](Homebrew.md).
 brew install yt-dlp
 ```
 
-Add aliases for [Zsh](Zsh.md) and [Fish](Fish.md).
+Get [Zsh](Zsh.md) and [Fish](Fish.md) configurations for **yt-dlp** from [Dotfiles](Dotfiles.md) with [wget](wget.md).
 
 ```shell
-# ~/.zshrc
-
-# yt-dlp
-alias youtube='yt-dlp'
+wget -P ~/.config/zsh/zshrc https://raw.githubusercontent.com/lukejanicke/dotfiles/master/.config/zsh/zshrc/yt-dlp.zsh
 ```
 
 ```shell
-# ~/.config/fish/config.fish
-
-if status is-interactive
-
-    # yt-dlp
-    function youtube
-        yt-dlp $argv
-    end
-
-end
+wget -P ~/.config/fish/conf.d https://raw.githubusercontent.com/lukejanicke/dotfiles/master/.config/fish/conf.d/yt-dlp.fish
 ```

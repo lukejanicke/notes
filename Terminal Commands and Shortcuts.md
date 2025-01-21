@@ -1,2 +1,0 @@
-# Terminal Commands and Shortcuts
-

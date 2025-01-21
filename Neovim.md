@@ -37,3 +37,5 @@ Source `init.lua` in **Neovim**.
 ```vim
 :source %
 ```
+
+TO BE CONTINUED …
