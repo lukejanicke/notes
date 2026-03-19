@@ -13,6 +13,7 @@
 - Security
 	- [x] Warn before connecting to a website over HTTP **ON**
 - Advanced
+	- [x] Default encoding **Unicode (UTF-8)**
 	- [x] Show features for web developers **ON**
 
 ## Toolbar

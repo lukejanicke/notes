@@ -1,36 +1,6 @@
 # Open WebUI
 
-- [ ] Finish the [Deploy on AWS](#Deploy%20on%20AWS) section.
-
 - [Open WebUI](https://openwebui.com) / [Documentation](https://docs.openwebui.com) / [GitHub](https://github.com/open-webui/open-webui)
-
-## Anthropic
-
-- [Anthropic Console](https://console.anthropic.com/dashboard)
-
-Log in to [openwebui.com](https://openwebui.com) and go to *Functions*.
-
-Find the **Anthropic** function and click **Get**.
-
-Add the URL `https://ai.lukejanicke.com` and click **Import to Open WebUI**.
-
-When it opens, click **Save** and close the function.
-
-Find Anthropic in the functions list and click *Valves* (the gear icon).
-
-Paste an Anthropic API key, click **Save** and close and **Enable** the function.
-
-## OpenRouter
-
--  [Open Router]()
-
-Go to *Admin Panel* → *Settings* → *Connections*.
-
-Under **OpenAI API**, click the + symbol.
-
-For **API Base URL**, enter `https://openrouter.ai/api/v1`.
-
-Enter an API key from OpenRouter and click **Save**.
 
 ## Deploy on AWS
 

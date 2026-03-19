@@ -41,6 +41,7 @@
 	- [x] Search
 	- [x] Slash commands
 	- [x] Tags
+	- [x] Web Viewer
 - Community plugins
 	- [x] Hider
 	- [x] Quick Wrapper (install manually)

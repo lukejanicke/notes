@@ -4,6 +4,7 @@
 
 - [x] 1Password for Safari
 - [x] Affinity Designer 2
+- [ ] Affinity Publisher 2
 - [x] Microsoft Excel
 - [x] Microsoft Word
 - [ ] Swift Playgrounds
@@ -16,9 +17,9 @@
 - [x] [1.1.1.1](https://one.one.one.one) (maybe switch to [NextDNS](https://nextdns.io) in the future)
 - [x] [1Password](1Password.md)
 - [x] [Blender](https://www.blender.org)
-- [ ] [ChatGPT](https://openai.com)
+- [x] [ChatGPT](https://openai.com)
 - [ ] [Claude](https://claude.ai/download)
-- [ ] [Discord](https://discord.com)
+- [x] [Discord](https://discord.com)
 - [ ] [Docker](Docker.md)
 - [ ] [GitHub Desktop](https://github.com/apps/desktop)
 - [x] [Ghostty](Ghostty.md)
@@ -27,10 +28,9 @@
 - [ ] JetBrains [PyCharm](https://www.jetbrains.com/pycharm/)
 - [ ] JetBrains [RustRover](https://www.jetbrains.com/rust/)
 - [x] MacTeX ([LaTeX](LaTeX.md))
-- [ ] [Mozilla Firefox](https://www.mozilla.org)
 - [x] [Obsidian](Obsidian.md)
 - [ ] [Skim](https://skim-app.sourceforge.io)
-- [ ] [Tencent Meeting](https://meeting.tencent.com)
+- [x] [Tencent Meeting](https://meeting.tencent.com)
 - [x] [Visual Studio Code](Visual%20Studio%20Code.md)
 - [ ] [Zoom](https://www.zoom.com)
 

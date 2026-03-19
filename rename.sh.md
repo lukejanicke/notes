@@ -22,8 +22,15 @@ fi
 
 count=1
 while IFS=, read -r old new || [[ -n "$old" ]]; do
+    # Remove quotes and whitespace from old and new names
+    old=${old#\"}
+    old=${old%\"}
+    new=${new#\"}
+    new=${new%\"}
     new=${new#[[:space:]]}
     new=${new%$'\r'}
+    # Ensure new filename ends with .pdf
+    [[ $new != *.pdf ]] && new="${new}.pdf"
     if [[ -n $preview ]]; then
         printf "%3d: %s -> %s\n" $count "$old" "$new"
     else

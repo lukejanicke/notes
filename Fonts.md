@@ -13,12 +13,12 @@
 
 Download and install the Super TTC packages from GitHub.
 
-- [x] Iosevka
-- [x] Iosevka Slab
-- [x] Iosevka Curly
-- [x] Iosevka Curly Slab
-- [x] Iosevka Aile
-- [x] Iosevka Etoille
+- [ ] Iosevka
+- [ ] Iosevka Slab
+- [ ] Iosevka Curly
+- [ ] Iosevka Curly Slab
+- [ ] Iosevka Aile
+- [ ] Iosevka Etoille
 
 Super TTC packages for monospace variants contain spacing variants **default**, **Term**, and **Fixed**.
 
@@ -37,8 +37,8 @@ Prebuilt Iosevka variants are narrower by default, with a normal width value of 
 
 ## Nerd Fonts
 
-- [x] Symbols Nerd Font
-- [x] Symbols Nerd Font Mono
+- [ ] Symbols Nerd Font
+- [ ] Symbols Nerd Font Mono
 
 See [Nerd Fonts](Nerd%20Fonts.md) for custom patching instructions.
 

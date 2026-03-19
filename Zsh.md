@@ -41,3 +41,5 @@ Create **Zsh** configuration directories if they do not already exist.
 ```shell
 mkdir -p ~/.config/zsh/{zshenv,zprofile,zshrc}
 ```
+
+Install [wget](wget.md) to simplify setup of other dotfiles.

@@ -11,8 +11,13 @@ fi
 
 count=1
 while IFS=, read -r old new || [[ -n "$old" ]]; do
+    old=${old#\"}
+    old=${old%\"}
+    new=${new#\"}
+    new=${new%\"}
     new=${new#[[:space:]]}
     new=${new%$'\r'}
+    [[ $new != *.pdf ]] && new="${new}.pdf"
     if [[ -n $preview ]]; then
         printf "%3d: %s -> %s\n" $count "$old" "$new"
     else

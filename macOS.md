@@ -34,8 +34,9 @@ softwareupdate --install-rosetta
 	- [x] Use trackpad for dragging **ON**
 	- [x] Dragging style **Without drag lock**
 - Appearance
-	- [x] Show scroll bars ... **When scrolling**
+	- [x] Show scroll bars **When scrolling**
 - Apple Intelligence & Siri
+	- [x] Siri **ON**
 	- [x] Keyboard shortcut **Press either command key twice**
 	- [ ] *Enable ChatGPT extension and sign in*
 - Control Centre
@@ -71,21 +72,21 @@ softwareupdate --install-rosetta
 	- [x] Press <kbd>fn</kbzd> key to **Do nothing** (set to **Change input source** if using other keyboards)
 	- Keyboard Shortcuts… *Turn off all except…*
 		- Mission Control
-			- Mission Control
+			- [x] Mission Control
 				- [x] Move left a space <kbd>control</kbd> <kbd>left</kbd>
 				- [x] Move right a space <kbd>control</kbd> <kbd>right</kbd>
 				- [x] Switch to Desktop 1 <kbd>control</kbd> <kbd>1</kbd>
-			- Screenshots
-				- [x] Save picture of screen as file <kbd>shift</kbd> <kbd>command</kbd> <kbd>3</kbd>
-				- [x] Save picture of selected area as file <kbd>shift</kbd> <kbd>command</kbd> <kbd>4</kbd>
-				- [x] Screenshot and recording options <kbd>shift</kbd> <kbd>command</kbd> <kbd>5</kbd>
-			- Spotlight
-				- [x] Show Spotlight search <kbd>command</kbd> <kbd>space</kbd>
+		- Screenshots
+			- [x] Save picture of screen as file <kbd>shift</kbd> <kbd>command</kbd> <kbd>3</kbd>
+			- [x] Save picture of selected area as file <kbd>shift</kbd> <kbd>command</kbd> <kbd>4</kbd>
+			- [x] Screenshot and recording options <kbd>shift</kbd> <kbd>command</kbd> <kbd>5</kbd>
+		- Spotlight
+			- [x] Show Spotlight search <kbd>command</kbd> <kbd>space</kbd>
 	- Input Sources / Edit…
 		- [x] Show input menu in menu bar **ON**
 		- [x] Input sources: **Australian**, **Pinyin - Simplified**
 	- [x] Dictation **ON**
-	- [x] Languages / Edit… / Select languages… **Australia**, **Chinese (Mandarin)**
+	- [x] Languages / Edit… / Select languages: **Australia**, **Chinese (Mandarin)**
 - Trackpad
 	- More Gestures
 		- [x] Mission Control **Swipe up with four fingers**
@@ -95,7 +96,7 @@ softwareupdate --install-rosetta
 
 [How to create a bootable installer for macOS](https://sUpport.apple.com/en-us/HT201372)
 
-Format USB flash drive `Install macOS Sequoia` as Mac OS Extended (Journaled).
+Format USB flash drive `Install macOS` as Mac OS Extended (Journaled).
 
 Look for available installers.
 
@@ -112,11 +113,11 @@ softwareupdate --fetch-full-installer
 Or a specific version.
 
 ```shell
-softwareupdate --fetch-full-installer --full-installer-version 15.2
+softwareupdate --fetch-full-installer --full-installer-version 26.2
 ```
 
 Install the installer.
 
 ```zsh
-sudo /Applications/Install\ macOS\ Sequoia.app/Contents/Resources/createinstallmedia --volume /Volumes/Install\ macOS\ Sequoia
+sudo /Applications/Install\ macOS\ Tahoe.app/Contents/Resources/createinstallmedia --volume /Volumes/Install\ macOS
 ```

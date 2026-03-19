@@ -29,7 +29,7 @@ Install [1Password CLI](1Password%20CLI.md) with Homebrew.
 
 Enable the **1Password for Safari** extension in **Safari** settings
 
-Set the **1Password for Safari** to ask for permission to read and alter websites.
+Set the **1Password for Safari** to ask for permission to read and alter other websites.
 
 ### Settings
 
@@ -37,3 +37,7 @@ Set the **1Password for Safari** to ask for permission to read and alter website
 
 - Autofill & save
 	- Sign in automatically after autofill **OFF**
+- Notifications
+	- Watchtower alters on items **ON**
+- Watchtower
+	- Check for vulnerable passwords **ON**

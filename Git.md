@@ -1,4 +1,3 @@
-- [ ] Move commands to [Terminal Commands and Shortcuts](Terminal%20Commands%20and%20Shortcuts.md).
 # Git
 
 - [Git](https://git-scm.com)
@@ -58,4 +57,11 @@ Verify that **Git** global configuration is set correctly.
 git config --global user.name
 git config --global user.email
 git config --global init.defaultBranch
+```
+
+Ignore `.DS_Store` globally.
+
+```shell
+git config --global core.excludesfile ~/.gitignore_global
+echo ".DS_Store" >> ~/.gitignore_global
 ```
