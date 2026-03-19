@@ -12,5 +12,3 @@ wget -O ~/.local/bin/download.py \
 https://raw.githubusercontent.com/epoiisa/Icons/main/download.py
 chmod +x ~/.local/bin/download
 ```
-
-CHANGE
