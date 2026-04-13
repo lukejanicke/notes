@@ -13,11 +13,11 @@ brew install fnm
 Add shell completions for [Zsh](Zsh.md) and [Fish](Fish.md).
 
 ```shell
-fnm completions --shell zsh
+TBC
 ```
 
 ```shell
-fnm completions --shell fish
+TBC
 ```
 
 Get [Zsh](Zsh.md) and [Fish](Fish.md) configurations for **fnm** from [Dotfiles](Dotfiles.md) with [wget](wget.md).
