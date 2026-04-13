@@ -23,9 +23,9 @@ TBC
 Get [Zsh](Zsh.md) and [Fish](Fish.md) configurations for **fnm** from [Dotfiles](Dotfiles.md) with [wget](wget.md).
 
 ```shell
-wget -P ~/.config/zsh/zshrc https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.config/zsh/zshrc/fnm.zsh
+wget -O ~/.config/zsh/zshrc/fnm.zsh https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.config/zsh/zshrc/fnm.zsh
 ```
 
 ```shell
-wget -P ~/.config/fish/conf.d https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.config/fish/conf.d/eza.fish
+wget -O ~/.config/fish/conf.d/eza.fish https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.config/fish/conf.d/eza.fish
 ```
