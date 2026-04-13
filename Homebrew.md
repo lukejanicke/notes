@@ -7,11 +7,12 @@
 - [x] [1Password CLI](1Password%20CLI.md)
 - [x] [AWS CLI](AWS%20CLI.md)
 - [ ] [bat](bat.md)
+- [x] [Codex CLI](Codex%20CLI.md)
 - [ ] [eza](eza.md)
 - [ ] [fd](fd.md)
 - [ ] [FFmpeg](FFmpeg.md)
 - [ ] [Fish](Fish.md)
-- [ ] [fnm](fnm.md) (→ [Node](Node.md))
+- [x] [fnm](fnm.md) (→ [Node](Node.md))
 - [ ] [fzf](fzf.md)
 - [x] [Git](Git.md)
 - [ ] [Go](Go.md)
@@ -42,14 +43,14 @@ Install **Homebrew** with the official install script.
 Get [Zsh](Zsh.md) configuration for **Homebrew** from [Dotfiles](Dotfiles.md) with **curl**.
 
 ```shell
-curl -o ~/.config/zsh/zprofile/homebrew.zsh https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.config/zsh/zprofile/homebrew.zsh
+curl -o ~/.config/zsh/zshenv/homebrew.zsh https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.config/zsh/zshenv/homebrew.zsh
 ```
 
-Source [Zsh](Zsh.md) configuration for **Homebrew** from `~/.zprofile`.
+Source [Zsh](Zsh.md) configuration for **Homebrew** from `~/.zshenv`.
 
 ```shell
 # Homebrew
-source ~/.config/zsh/zprofile/homebrew.zsh
+source ~/.config/zsh/zshenv/homebrew.zsh
 ```
 
 Get [Fish](Fish.md) configuration for **Homebrew** when installing [Fish](Fish.md).

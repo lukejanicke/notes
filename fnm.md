@@ -10,12 +10,22 @@ Install **fnm** with [Homebrew](Homebrew.md) (recommended).
 brew install fnm
 ```
 
-Get [Zsh](Zsh.md) and [Fish](Fish.md) configurations for **fnm** from [Dotfiles](Dotfiles.md) with [wget](wget.md).
+Add shell completions for [Zsh](Zsh.md) and [Fish](Fish.md).
 
 ```shell
-wget -P ~/.config/zsh/zshrc https://raw.githubusercontent.com/lukejanicke/dotfiles/master/.config/zsh/zshrc/fnm.zsh
+fnm completions --shell zsh
 ```
 
 ```shell
-wget -P ~/.config/fish/conf.d https://raw.githubusercontent.com/lukejanicke/dotfiles/master/.config/fish/conf.d/eza.fish
+fnm completions --shell fish
+```
+
+Get [Zsh](Zsh.md) and [Fish](Fish.md) configurations for **fnm** from [Dotfiles](Dotfiles.md) with [wget](wget.md).
+
+```shell
+wget -P ~/.config/zsh/zshrc https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.config/zsh/zshrc/fnm.zsh
+```
+
+```shell
+wget -P ~/.config/fish/conf.d https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.config/fish/conf.d/eza.fish
 ```

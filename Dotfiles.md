@@ -9,6 +9,6 @@ curl -o ~/path/to/file https://raw.githubusercontent.com/lukejanicke/dotfiles/ma
 ```
 
 ```shell
-wget -P ~/path/to https://raw.githubusercontent.com/lukejanicke/dotfiles/master/path/to/file
+wget -P ~/path/to https://raw.githubusercontent.com/lukejanicke/dotfiles/main/path/to/file
 ```
 

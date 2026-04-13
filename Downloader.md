@@ -1,6 +1,6 @@
 # Downloader
 
-- [Icons (GitHub)](https://github.com/epoiisa/Icons)
+- [download (GitHub)](https://github.com/epoiisa/download)
 
 ## Install
 
