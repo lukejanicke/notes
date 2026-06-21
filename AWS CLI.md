@@ -22,15 +22,18 @@ Enter session configuration options.
 
 ```shell
 SSO session name (Recommended): ap-southeast-1
-SSO start URL [None]: GET URL FROM AWS ACCESS PORTAL
-SSO region [None]: ap-southeast-1
-SSO registration scopes [None]: sso:account:access
 ```
 
-After confirming an account and role, enter CLI configuration options.
+After browser-based PKCE authorisation, enter CLI configuration options.
 
 ```
-CLI default client Region [None]: ap-southeast-1
-CLI default output format [None]: table
-CLI profile name [AdministratorAccess-024171276396]: ap-southeast-1-administrator-access
+Default client Region [None]: ap-southeast-1
+CLI default output format (json if not specified) [None]: table
+Profile name [AdministratorAccess-024171276396]: ap-southeast-1-administrator-access
+```
+
+⚠️ THESE NOTES ARE INCOMPLETE AND NEED VERIFYING
+
+```shell
+aws sts get-caller-identity --profile ap-southeast-1-administrator-access
 ```

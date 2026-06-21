@@ -16,6 +16,7 @@
 - [ ] [fzf](fzf.md)
 - [x] [Git](Git.md)
 - [ ] [Go](Go.md)
+- [ ] [HTTPie](HTTPie.md)
 - [ ] [mpv](mpv.md)
 - [ ] [Neovim](Neovim.md)
 - [ ] [Pandoc](Pandoc.md)

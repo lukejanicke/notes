@@ -19,3 +19,19 @@ wget -O ~/.config/zsh/zshrc/fnm.zsh https://raw.githubusercontent.com/lukejanick
 ```shell
 wget -O ~/.config/fish/conf.d/eza.fish https://raw.githubusercontent.com/lukejanicke/dotfiles/main/.config/fish/conf.d/eza.fish
 ```
+
+Install Node in a project directory.
+
+```shell
+fnm install --lts
+fnm use 24
+echo 24 > .node-version
+```
+
+Verify the installation.
+
+```shell
+node -v
+npm -v
+cat .node-version
+```
